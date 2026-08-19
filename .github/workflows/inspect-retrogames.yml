@@ -1,4 +1,4 @@
-name: Inspect RetroGames EJS
+name: Inspect Emulator Games Zone
 
 on:
   push:
@@ -13,19 +13,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Inspect page EJS configuration
+      - name: Inspect Mega Man X2 page and headers
         run: |
-          curl -L --fail --silent --show-error \
-            'https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No' \
-            -o page-ejs.html
+          set -euxo pipefail
+          URL='https://emulatorgameszone.com/games/mega-man-x2'
+          curl -L --fail --silent --show-error -A 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_2 like Mac OS X) AppleWebKit/605.1.15 Version/26.2 Mobile/15E148 Safari/604.1' "$URL" -o egz-page.html
+          curl -L -sS -D egz-headers.txt -o /dev/null "$URL"
           {
-            echo '=== EJS CONFIG LINES ==='
-            grep -Ein -C 4 'EJS_|loader.js|Mega_Man_X2|oldCores|Settings|VirtualGamepad|startOn' page-ejs.html || true
-          } > ejs-page-config.txt
+            echo '=== FRAME HEADERS ==='
+            grep -Ei 'x-frame-options|content-security-policy|cross-origin|access-control' egz-headers.txt || true
+            echo
+            echo '=== PLAYER / EJS CONFIG ==='
+            grep -Ein -C 5 'EJS_|EmulatorJS|loader\.js|iframe|gameUrl|gameUrl|pathtodata|oldCores|snes|rom|play-game|game-player' egz-page.html || true
+            echo
+            echo '=== SCRIPT SOURCES ==='
+            grep -Eio '<script[^>]+src=["'"'][^"'"']+["'"']' egz-page.html | head -100 || true
+          } > egz-inspection.txt
       - name: Commit inspection
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add page-ejs.html ejs-page-config.txt
-          git commit -m 'inspect RetroGames EJS page config' || exit 0
+          git add egz-page.html egz-headers.txt egz-inspection.txt
+          git commit -m 'inspect Emulator Games Zone player' || exit 0
           git push
