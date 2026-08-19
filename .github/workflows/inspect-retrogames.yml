@@ -20,6 +20,7 @@ jobs:
           npx playwright install --with-deps chromium >/dev/null 2>&1
           cat > measure.mjs <<'JS'
           import { chromium } from 'playwright';
+          import { writeFileSync } from 'node:fs';
           const browser = await chromium.launch({headless:true});
           const page = await browser.newPage({
             viewport: {width:980,height:1000},
@@ -50,8 +51,7 @@ jobs:
               gameText:(g.innerText||'').slice(0,500)
             };
           });
-          const out={...data,errors};
-          require('fs').writeFileSync('layout-check.txt',JSON.stringify(out,null,2));
+          writeFileSync('layout-check.txt',JSON.stringify({...data,errors},null,2));
           await browser.close();
           JS
           node measure.mjs
