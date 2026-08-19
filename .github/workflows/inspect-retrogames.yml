@@ -13,20 +13,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Inspect loader
+      - name: Inspect page EJS configuration
         run: |
-          curl -L --fail --silent --show-error 'https://www.retrogames.cz/EJS/loader.js' -o loader-retrogames.js
+          curl -L --fail --silent --show-error \
+            'https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No' \
+            -o page-ejs.html
           {
-            echo '=== LOADER ==='
-            cat loader-retrogames.js
-            echo
-            echo '=== OLD CORES / VERSION / DATA REFERENCES ==='
-            grep -Ein 'oldCores|version|data|retroarch|core|threads|wasm' loader-retrogames.js || true
-          } > loader-check.txt
+            echo '=== EJS CONFIG LINES ==='
+            grep -Ein -C 4 'EJS_|loader.js|Mega_Man_X2|oldCores|Settings|VirtualGamepad|startOn' page-ejs.html || true
+          } > ejs-page-config.txt
       - name: Commit inspection
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add loader-retrogames.js loader-check.txt
-          git commit -m 'inspect retrogames EJS loader' || exit 0
+          git add page-ejs.html ejs-page-config.txt
+          git commit -m 'inspect RetroGames EJS page config' || exit 0
           git push
