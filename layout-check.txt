@@ -12,10 +12,11 @@
     "height": 448
   },
   "scrollWidth": 1010,
-  "scrollHeight": 4095,
-  "bodyWidth": 964,
+  "scrollHeight": 4014,
+  "innerWidth": 1010,
+  "innerHeight": 1031,
   "bodyMargin": "8px",
-  "gameChildren": 1,
-  "gameText": "",
+  "children": 1,
+  "html": "<div id=\"game\"><canvas></canvas></div>",
   "errors": []
 }
