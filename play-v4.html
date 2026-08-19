@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#090a0c">
+  <title>Divirta-se</title>
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#090a0c;color:#fff;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    body{min-height:100dvh;touch-action:manipulation}
+    .shell{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:max(12px,env(safe-area-inset-top)) 8px max(8px,env(safe-area-inset-bottom))}
+    .intro{text-align:center;line-height:1.12;flex:0 0 auto}
+    .intro strong{display:block;font-size:clamp(18px,5vw,23px);letter-spacing:.02em}
+    .intro span{display:block;margin-top:5px;font-size:clamp(10px,3vw,12px);opacity:.64}
+    .intro small{display:block;margin-top:3px;font-size:clamp(9px,2.6vw,11px);opacity:.42}
+    .screen{width:512px;height:448px;overflow:hidden;background:#000;flex:0 0 auto;transform-origin:center center;transform:scale(var(--fit,1));margin:calc((448px * (var(--fit,1) - 1))/2) calc((512px * (var(--fit,1) - 1))/2);contain:layout paint size style}
+    iframe{display:block;width:512px;height:448px;border:0;margin:0;background:#000}
+    @media (orientation:landscape){.shell{gap:2px;padding:2px}.intro strong{font-size:12px}.intro span{font-size:9px;margin-top:1px}.intro small{display:none}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="intro">
+      <strong>Encoste. Jogue. Divirta-se.</strong>
+      <span>Aguarde alguns instantes para o jogo carregar.</span>
+      <small>Para uma melhor experiência, use o celular na horizontal.</small>
+    </header>
+    <section class="screen">
+      <iframe
+        src="https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No#game"
+        title="Mega Man X2"
+        scrolling="no"
+        fetchpriority="high"
+        allowfullscreen webkitallowfullscreen mozallowfullscreen
+        sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-presentation"
+        allow="autoplay; fullscreen; gamepad">
+      </iframe>
+    </section>
+  </main>
+  <script>
+    let raf=0;
+    function fit(){
+      cancelAnimationFrame(raf);
+      raf=requestAnimationFrame(()=>{
+        const landscape=innerWidth>innerHeight;
+        const reserve=landscape?30:84;
+        const s=Math.min(1,(innerWidth-8)/512,(innerHeight-reserve)/448);
+        document.documentElement.style.setProperty('--fit',Math.max(.25,s));
+      });
+    }
+    fit();
+    addEventListener('resize',fit,{passive:true});
+    addEventListener('orientationchange',fit,{passive:true});
+  </script>
+</body>
+</html>
