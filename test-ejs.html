@@ -7,16 +7,18 @@
   <title>Divirta-se</title>
   <style>
     *{box-sizing:border-box}
-    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#090a0c;color:#fff;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    body{min-height:100dvh;touch-action:manipulation;background:radial-gradient(circle at 50% 30%,#17191d 0,#0d0e11 42%,#07080a 100%)}
-    .shell{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 8px max(8px,env(safe-area-inset-bottom));gap:8px}
-    .intro{text-align:center;flex:0 0 auto;line-height:1.15;text-shadow:0 2px 8px #000;user-select:none}
-    .intro strong{display:block;font-size:clamp(17px,4.8vw,22px);letter-spacing:.03em}
-    .intro span{display:block;margin-top:4px;font-size:clamp(10px,3vw,12px);opacity:.65}
-    .intro small{display:block;margin-top:3px;font-size:clamp(9px,2.7vw,11px);opacity:.42}
-    .screen{position:relative;flex:0 0 auto;width:var(--w,512px);height:var(--h,448px);overflow:hidden;background:#000;border:1px solid rgba(255,255,255,.09);border-radius:5px;box-shadow:0 10px 32px rgba(0,0,0,.42);contain:strict}
-    iframe{position:absolute;left:calc(-208.5px * var(--scale,1));top:calc(-231px * var(--scale,1));width:calc(980px * var(--scale,1));height:calc(1000px * var(--scale,1));border:0;margin:0;background:#000;transform-origin:0 0;transform:scale(var(--scale,1));}
-    @media (orientation:landscape){.shell{padding:2px 4px;gap:3px}.intro strong{font-size:12px}.intro span{font-size:9px;margin-top:1px}.intro small{display:none}}
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#090a0c;color:#f5f5f5;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    body{min-height:100dvh;touch-action:manipulation}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 4px),radial-gradient(circle at 50% 22%,#25282e 0,transparent 48%)}
+    .shell{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:max(12px,env(safe-area-inset-top)) 8px max(8px,env(safe-area-inset-bottom))}
+    .intro{position:relative;z-index:2;text-align:center;line-height:1.15;flex:0 0 auto;user-select:none}
+    .intro strong{display:block;font-size:clamp(18px,5vw,24px);letter-spacing:.015em;font-weight:800}
+    .intro span{display:block;margin-top:5px;font-size:clamp(10px,3vw,12px);opacity:.68}
+    .intro small{display:block;margin-top:4px;font-size:clamp(9px,2.7vw,11px);opacity:.44}
+    .tv{position:relative;z-index:1;width:512px;height:448px;flex:0 0 auto;transform-origin:center center;transform:scale(var(--fit,1));margin:calc((448px * (var(--fit,1) - 1))/2) calc((512px * (var(--fit,1) - 1))/2);background:#000;border:5px solid #17191e;border-radius:9px;box-shadow:0 7px 22px rgba(0,0,0,.38);overflow:hidden;contain:strict}
+    .crop{position:absolute;inset:0;overflow:hidden;background:#000}
+    iframe{position:absolute;left:-208.5px;top:0;width:980px;height:448px;border:0;margin:0;background:#000;display:block}
+    @media (orientation:landscape){.shell{gap:2px;padding:2px}.intro strong{font-size:12px}.intro span{font-size:9px;margin-top:1px}.intro small{display:none}.tv{border-width:3px;border-radius:5px}}
   </style>
 </head>
 <body>
@@ -24,33 +26,31 @@
     <header class="intro">
       <strong>Encoste. Jogue. Divirta-se.</strong>
       <span>Aguarde alguns instantes para o jogo carregar.</span>
-      <small>Para uma melhor experiência, use o celular na horizontal.</small>
+      <small>Vire o celular para jogar melhor. Se o áudio não iniciar, toque uma vez no jogo.</small>
     </header>
-    <section class="screen" id="screen">
-      <iframe
-        src="https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No"
-        title="Mega Man X2"
-        scrolling="no"
-        allowfullscreen webkitallowfullscreen mozallowfullscreen
-        sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-presentation"
-        allow="autoplay; fullscreen; gamepad">
-      </iframe>
+    <section class="tv">
+      <div class="crop">
+        <iframe
+          src="https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No#game"
+          title="Mega Man X2"
+          scrolling="no"
+          fetchpriority="high"
+          allowfullscreen webkitallowfullscreen mozallowfullscreen
+          sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-presentation"
+          allow="autoplay; fullscreen; gamepad">
+        </iframe>
+      </div>
     </section>
   </main>
   <script>
-    const screen=document.getElementById('screen');
     let raf=0;
     function fit(){
       cancelAnimationFrame(raf);
       raf=requestAnimationFrame(()=>{
         const landscape=innerWidth>innerHeight;
-        const reserve=landscape?34:86;
-        const availW=Math.max(1,innerWidth-8);
-        const availH=Math.max(1,innerHeight-reserve);
-        const s=Math.min(1,availW/512,availH/448);
-        document.documentElement.style.setProperty('--scale',s);
-        document.documentElement.style.setProperty('--w',(512*s)+'px');
-        document.documentElement.style.setProperty('--h',(448*s)+'px');
+        const reserve=landscape?28:92;
+        const s=Math.min(1,(innerWidth-12)/512,(innerHeight-reserve)/448);
+        document.documentElement.style.setProperty('--fit',Math.max(.25,s));
       });
     }
     fit();
