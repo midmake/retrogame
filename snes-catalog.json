@@ -1,0 +1,626 @@
+[
+  {
+    "id": 245,
+    "title": "Super Mario World"
+  },
+  {
+    "id": 250,
+    "title": "Alien 3"
+  },
+  {
+    "id": 255,
+    "title": "Final Fight"
+  },
+  {
+    "id": 265,
+    "title": "Addams Family, The"
+  },
+  {
+    "id": 273,
+    "title": "Mr. Do!"
+  },
+  {
+    "id": 278,
+    "title": "Test Drive II: The Duel"
+  },
+  {
+    "id": 283,
+    "title": "Legend of Zelda, The: A Link to the Past"
+  },
+  {
+    "id": 289,
+    "title": "Donkey Kong Country"
+  },
+  {
+    "id": 294,
+    "title": "Lord of the Rings - Volume One"
+  },
+  {
+    "id": 299,
+    "title": "Jungle Book, The"
+  },
+  {
+    "id": 304,
+    "title": "Street Fighter II"
+  },
+  {
+    "id": 309,
+    "title": "Pitfall: The Mayan Adventure"
+  },
+  {
+    "id": 314,
+    "title": "Lamborghini: American Challenge"
+  },
+  {
+    "id": 325,
+    "title": "Worms"
+  },
+  {
+    "id": 388,
+    "title": "Indiana Jones’ Greatest Adventures"
+  },
+  {
+    "id": 399,
+    "title": "Might and Magic III: Isles of Terra"
+  },
+  {
+    "id": 639,
+    "title": "Super Castlevania IV"
+  },
+  {
+    "id": 764,
+    "title": "Super Mario All-Stars"
+  },
+  {
+    "id": 767,
+    "title": "Super Metroid"
+  },
+  {
+    "id": 768,
+    "title": "Prehistorik Man"
+  },
+  {
+    "id": 772,
+    "title": "Super Mario World 2: Yoshi’s Island"
+  },
+  {
+    "id": 773,
+    "title": "Lost Vikings II: Norse by Norsewest"
+  },
+  {
+    "id": 774,
+    "title": "Final Fight 2"
+  },
+  {
+    "id": 785,
+    "title": "Donkey Kong Country 2: Diddy’s Kong Quest"
+  },
+  {
+    "id": 789,
+    "title": "Super Mario Kart"
+  },
+  {
+    "id": 793,
+    "title": "Teenage Mutant Ninja Turtles IV: Turtles in Time"
+  },
+  {
+    "id": 798,
+    "title": "Contra III: The Alien Wars"
+  },
+  {
+    "id": 800,
+    "title": "Chrono Trigger"
+  },
+  {
+    "id": 802,
+    "title": "Kirby Super Star"
+  },
+  {
+    "id": 807,
+    "title": "Q*Bert 3"
+  },
+  {
+    "id": 808,
+    "title": "Super Mario RPG: Legend of the Seven Stars"
+  },
+  {
+    "id": 811,
+    "title": "Super Tennis"
+  },
+  {
+    "id": 815,
+    "title": "F-Zero"
+  },
+  {
+    "id": 820,
+    "title": "Super Star Wars"
+  },
+  {
+    "id": 825,
+    "title": "Final Fight 3"
+  },
+  {
+    "id": 830,
+    "title": "Star Fox"
+  },
+  {
+    "id": 831,
+    "title": "Operation Thunderbolt"
+  },
+  {
+    "id": 851,
+    "title": "Cliffhanger"
+  },
+  {
+    "id": 857,
+    "title": "Super Punch-Out!!"
+  },
+  {
+    "id": 861,
+    "title": "Breath of Fire"
+  },
+  {
+    "id": 865,
+    "title": "Mega Man X"
+  },
+  {
+    "id": 870,
+    "title": "Super Adventure Island"
+  },
+  {
+    "id": 875,
+    "title": "Killer Instinct"
+  },
+  {
+    "id": 879,
+    "title": "Bust-A-Move"
+  },
+  {
+    "id": 881,
+    "title": "Mighty Morphin Power Rangers"
+  },
+  {
+    "id": 882,
+    "title": "EarthBound"
+  },
+  {
+    "id": 887,
+    "title": "Adventures of Batman & Robin, The"
+  },
+  {
+    "id": 890,
+    "title": "Speedy Gonzales in Los Gatos Bandidos"
+  },
+  {
+    "id": 895,
+    "title": "Mega Man X2"
+  },
+  {
+    "id": 898,
+    "title": "Pilotwings"
+  },
+  {
+    "id": 900,
+    "title": "Final Fantasy VI"
+  },
+  {
+    "id": 903,
+    "title": "Zombies Ate My Neighbors"
+  },
+  {
+    "id": 904,
+    "title": "Mega Man 7"
+  },
+  {
+    "id": 910,
+    "title": "Top Gear"
+  },
+  {
+    "id": 919,
+    "title": "Super Street Fighter II: The New Challengers"
+  },
+  {
+    "id": 920,
+    "title": "Spider-Man: The Animated Series"
+  },
+  {
+    "id": 922,
+    "title": "Super Star Wars: The Empire Strikes Back"
+  },
+  {
+    "id": 925,
+    "title": "Super Double Dragon"
+  },
+  {
+    "id": 926,
+    "title": "Ghoul Patrol"
+  },
+  {
+    "id": 933,
+    "title": "Mega Man X3"
+  },
+  {
+    "id": 936,
+    "title": "WWF WrestleMania: The Arcade Game"
+  },
+  {
+    "id": 944,
+    "title": "Castlevania: Dracula X"
+  },
+  {
+    "id": 947,
+    "title": "Secret of Mana"
+  },
+  {
+    "id": 951,
+    "title": "Scooby-Doo Mystery"
+  },
+  {
+    "id": 955,
+    "title": "Young Merlin"
+  },
+  {
+    "id": 956,
+    "title": "3 Ninjas Kick Back"
+  },
+  {
+    "id": 960,
+    "title": "Virtual Bart"
+  },
+  {
+    "id": 968,
+    "title": "Total Carnage"
+  },
+  {
+    "id": 990,
+    "title": "Best of the Best Championship Karate"
+  },
+  {
+    "id": 994,
+    "title": "Illusion of Gaia"
+  },
+  {
+    "id": 999,
+    "title": "True Lies"
+  },
+  {
+    "id": 1000,
+    "title": "Final Fantasy IV"
+  },
+  {
+    "id": 1008,
+    "title": "Demon’s Crest"
+  },
+  {
+    "id": 1017,
+    "title": "Astérix"
+  },
+  {
+    "id": 1021,
+    "title": "Donkey Kong Country 3: Dixie Kong’s Double Trouble!"
+  },
+  {
+    "id": 1029,
+    "title": "Tetris 2"
+  },
+  {
+    "id": 1032,
+    "title": "Tetris & Dr. Mario"
+  },
+  {
+    "id": 1037,
+    "title": "Super Bomberman"
+  },
+  {
+    "id": 1048,
+    "title": "Jurassic Park"
+  },
+  {
+    "id": 1052,
+    "title": "Super R.B.I. Baseball"
+  },
+  {
+    "id": 1059,
+    "title": "Super Ghouls ’N Ghosts"
+  },
+  {
+    "id": 1068,
+    "title": "Captain Commando"
+  },
+  {
+    "id": 1083,
+    "title": "Winter Olympics: Lillehammer ’94"
+  },
+  {
+    "id": 1102,
+    "title": "Final Fantasy V"
+  },
+  {
+    "id": 1105,
+    "title": "Dragon Warrior III (Dragon Quest III)"
+  },
+  {
+    "id": 1117,
+    "title": "Choplifter III: Rescue Survive"
+  },
+  {
+    "id": 1133,
+    "title": "Street Fighter II Turbo: Hyper Fighting"
+  },
+  {
+    "id": 1135,
+    "title": "NBA Live 95"
+  },
+  {
+    "id": 1142,
+    "title": "Street Fighter Alpha 2"
+  },
+  {
+    "id": 1152,
+    "title": "ActRaiser"
+  },
+  {
+    "id": 1155,
+    "title": "Super Star Wars: Return of the Jedi"
+  },
+  {
+    "id": 1157,
+    "title": "Magical Quest Starring Mickey Mouse, The"
+  },
+  {
+    "id": 1169,
+    "title": "Batman Returns"
+  },
+  {
+    "id": 1211,
+    "title": "Top Gear 2"
+  },
+  {
+    "id": 1213,
+    "title": "Terminator, The"
+  },
+  {
+    "id": 1235,
+    "title": "Sengoku"
+  },
+  {
+    "id": 1247,
+    "title": "Jimmy Connors Pro Tennis Tour"
+  },
+  {
+    "id": 1260,
+    "title": "Disney’s Goof Troop"
+  },
+  {
+    "id": 1261,
+    "title": "Desert Strike: Return to the Gulf"
+  },
+  {
+    "id": 1266,
+    "title": "Secret of Evermore"
+  },
+  {
+    "id": 1277,
+    "title": "Mask, The"
+  },
+  {
+    "id": 1280,
+    "title": "Fighter’s History"
+  },
+  {
+    "id": 1288,
+    "title": "Disney’s Beauty and the Beast"
+  },
+  {
+    "id": 1301,
+    "title": "Road Runner’s Death Valley Rally"
+  },
+  {
+    "id": 1320,
+    "title": "Legend of the Mystical Ninja, The"
+  },
+  {
+    "id": 1342,
+    "title": "Fatal Fury"
+  },
+  {
+    "id": 1349,
+    "title": "Spider-Man and Venom: Maximum Carnage"
+  },
+  {
+    "id": 1365,
+    "title": "Super Bomberman 2"
+  },
+  {
+    "id": 1367,
+    "title": "Art of Fighting"
+  },
+  {
+    "id": 1378,
+    "title": "F1 Pole Position"
+  },
+  {
+    "id": 1383,
+    "title": "Tintin in Tibet"
+  },
+  {
+    "id": 1387,
+    "title": "ActRaiser 2"
+  },
+  {
+    "id": 1410,
+    "title": "Saturday Night Slam Masters"
+  },
+  {
+    "id": 1421,
+    "title": "King of the Monsters"
+  },
+  {
+    "id": 1426,
+    "title": "Super Bomberman 3"
+  },
+  {
+    "id": 1435,
+    "title": "World Heroes"
+  },
+  {
+    "id": 1441,
+    "title": "Lufia & the Fortress of Doom"
+  },
+  {
+    "id": 1452,
+    "title": "Gradius III - The Outbreak"
+  },
+  {
+    "id": 1457,
+    "title": "Magical Drop"
+  },
+  {
+    "id": 1475,
+    "title": "Star Trek: The Next Generation"
+  },
+  {
+    "id": 1494,
+    "title": "Double Dragon V: The Shadow Falls"
+  },
+  {
+    "id": 1500,
+    "title": "Pac-in-Time"
+  },
+  {
+    "id": 1504,
+    "title": "Ninja Gaiden Trilogy"
+  },
+  {
+    "id": 1509,
+    "title": "Super Turrican"
+  },
+  {
+    "id": 1520,
+    "title": "Super Bomberman 4"
+  },
+  {
+    "id": 1521,
+    "title": "Super Bomberman 5"
+  },
+  {
+    "id": 1523,
+    "title": "Dragon Quest I & II"
+  },
+  {
+    "id": 1532,
+    "title": "GP-1"
+  },
+  {
+    "id": 1538,
+    "title": "Axelay"
+  },
+  {
+    "id": 1539,
+    "title": "Harvest Moon"
+  },
+  {
+    "id": 1542,
+    "title": "Cybernator"
+  },
+  {
+    "id": 1546,
+    "title": "Plok"
+  },
+  {
+    "id": 1553,
+    "title": "Tales of Phantasia"
+  },
+  {
+    "id": 1573,
+    "title": "Spindizzy Worlds"
+  },
+  {
+    "id": 1579,
+    "title": "Uniracers"
+  },
+  {
+    "id": 1591,
+    "title": "Nosferatu"
+  },
+  {
+    "id": 1596,
+    "title": "Adventures of Tintin, The: Prisoners of the Sun"
+  },
+  {
+    "id": 1601,
+    "title": "Smurfs, The"
+  },
+  {
+    "id": 1612,
+    "title": "Last Action Hero"
+  },
+  {
+    "id": 1614,
+    "title": "Lufia II: Rise of the Sinistrals"
+  },
+  {
+    "id": 1632,
+    "title": "Tetris Attack"
+  },
+  {
+    "id": 1636,
+    "title": "X-Men: Mutant Apocalypse"
+  },
+  {
+    "id": 1666,
+    "title": "Arcade’s Greatest Hits: The Atari Collection 1"
+  },
+  {
+    "id": 1669,
+    "title": "Super Turrican 2"
+  },
+  {
+    "id": 1674,
+    "title": "Yoshi’s Cookie"
+  },
+  {
+    "id": 1698,
+    "title": "Pac-Attack"
+  },
+  {
+    "id": 1728,
+    "title": "Battletoads in Battlemaniacs"
+  },
+  {
+    "id": 1739,
+    "title": "Shin Megami Tensei"
+  },
+  {
+    "id": 1743,
+    "title": "NBA Jam Tournament Edition"
+  },
+  {
+    "id": 1746,
+    "title": "Heartthrob Memorial"
+  },
+  {
+    "id": 1770,
+    "title": "Pop’n Twinbee"
+  },
+  {
+    "id": 1774,
+    "title": "Death and Return of Superman, The"
+  },
+  {
+    "id": 1833,
+    "title": "Super Adventure Island II"
+  },
+  {
+    "id": 1834,
+    "title": "Championship Soccer ’94"
+  },
+  {
+    "id": 1838,
+    "title": "Dragon Quest V"
+  },
+  {
+    "id": 1845,
+    "title": "Simpsons, The: Bart’s Nightmare"
+  }
+]
