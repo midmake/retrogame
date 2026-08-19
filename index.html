@@ -1,54 +1,103 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#07090d" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
   <title>Divirta-se</title>
   <style>
     *{box-sizing:border-box}
-    html,body{margin:0;width:100%;height:100%;background:#07090d;color:#f4f4f4;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow:hidden}
-    body{min-height:100dvh}
-    .pixels{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.12;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:22px 22px}
-    .player{position:fixed;inset:0;z-index:1;background:#000;overflow:hidden}
-    iframe{display:block;width:100%;height:100%;border:0;background:#000}
-    .brand{position:fixed;top:max(12px,env(safe-area-inset-top));left:0;right:0;z-index:3;text-align:center;pointer-events:none;text-shadow:0 2px 12px rgba(0,0,0,.9)}
-    .eyebrow{margin:0 0 3px;font-size:9px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;opacity:.48}
-    h1{margin:0;font-size:clamp(18px,4.5vw,28px);font-weight:750;letter-spacing:-.02em}
-    .loading{position:fixed;inset:0;z-index:4;display:grid;place-items:center;padding:24px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.48);background:#000;transition:opacity .25s ease;pointer-events:none}
-    .loading.hide{opacity:0}
-    @media (orientation:landscape){.brand{display:none}}
+    html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden}
+    body{min-height:100dvh;touch-action:manipulation}
+
+    .intro{
+      position:fixed;
+      top:max(18px,env(safe-area-inset-top));
+      left:12px;
+      right:12px;
+      z-index:2;
+      color:#fff;
+      text-align:center;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      font-size:clamp(18px,5vw,24px);
+      font-weight:800;
+      letter-spacing:.015em;
+      pointer-events:none;
+      user-select:none;
+    }
+
+    .stage{
+      position:fixed;
+      left:50%;
+      top:50%;
+      width:512px;
+      height:448px;
+      overflow:hidden;
+      background:#000;
+      transform-origin:center center;
+      transform:translate(-50%,-50%) scale(var(--fit,1));
+    }
+
+    iframe{
+      position:absolute;
+      left:-208.5px;
+      top:-231px;
+      width:980px;
+      height:1000px;
+      border:0;
+      margin:0;
+      background:#000;
+    }
+
+    body.legacy .stage{inset:0;left:0;top:0;width:100%;height:100%;transform:none}
+    body.legacy iframe{left:0;top:0;width:100%;height:100%}
+
+    @media (orientation:landscape){.intro{display:none}}
   </style>
 </head>
 <body>
-  <div class="pixels"></div>
-  <div class="brand">
-    <p class="eyebrow">encoste e jogue</p>
-    <h1>Divirta-se.</h1>
-  </div>
-  <main class="player">
+  <div class="intro">Encoste. Jogue. Divirta-se.</div>
+
+  <main class="stage" id="stage">
     <iframe
-      id="game"
+      id="gameFrame"
+      src="https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No"
       title="Jogo"
+      scrolling="no"
       allowfullscreen
       webkitallowfullscreen
       mozallowfullscreen
-      scrolling="no"
+      sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-presentation"
       allow="autoplay; fullscreen; gamepad">
     </iframe>
   </main>
-  <div class="loading" id="loading">Carregando jogo…</div>
+
   <script>
-    (()=>{
-      const FALLBACK='19996-megaman-x2-usa';
-      const q=new URLSearchParams(location.search);
-      let game=(q.get('game')||FALLBACK).trim().toLowerCase();
-      if(!/^[a-z0-9-]+$/.test(game)) game=FALLBACK;
-      const frame=document.getElementById('game');
-      const loading=document.getElementById('loading');
-      frame.addEventListener('load',()=>loading.classList.add('hide'));
-      frame.src='https://www.retrogames.cc/embed/'+game+'.html';
-    })();
+    const params=new URLSearchParams(location.search);
+    const requested=(params.get('game')||'895').trim();
+    const frame=document.getElementById('gameFrame');
+
+    // Produção atual: IDs numéricos usam exatamente o player aprovado da RetroGames.cz.
+    if(/^\d{1,5}$/.test(requested)){
+      frame.src=`https://www.retrogames.cz/play_${requested}-SNES.php?emulator=EJS&Ads=No`;
+    }
+    // Compatibilidade: mantém funcionando os 93 links antigos já distribuídos.
+    else if(/^[a-z0-9-]{3,140}$/i.test(requested)){
+      document.body.classList.add('legacy');
+      frame.removeAttribute('sandbox');
+      frame.src=`https://www.retrogames.cc/embed/${requested.toLowerCase()}.html`;
+    }
+
+    function fitPlayer(){
+      if(document.body.classList.contains('legacy')) return;
+      const safeW=Math.max(1,window.innerWidth-4);
+      const safeH=Math.max(1,window.innerHeight-4);
+      const scale=Math.min(safeW/512,safeH/448);
+      document.documentElement.style.setProperty('--fit',String(scale));
+    }
+    fitPlayer();
+    addEventListener('resize',fitPlayer,{passive:true});
+    addEventListener('orientationchange',fitPlayer,{passive:true});
   </script>
 </body>
 </html>
