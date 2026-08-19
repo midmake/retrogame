@@ -1,0 +1,52 @@
+name: Inspect RetroGames EJS
+
+on:
+  push:
+    paths:
+      - '.github/workflows/inspect-retrogames.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch page source
+        run: |
+          curl -L --fail --silent --show-error \
+            -A 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Version/17.0 Mobile/15E148 Safari/604.1' \
+            'https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No' \
+            -o inspection-source.html
+      - name: Extract emulator clues
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          import re
+
+          text = Path('inspection-source.html').read_text('utf-8', errors='ignore')
+          out = []
+          out.append(f'SOURCE_BYTES={len(text.encode())}')
+          out.append('\n=== IFRAME SRC ===')
+          for m in re.finditer(r'<iframe[^>]*?src=["\']([^"\']+)', text, re.I|re.S):
+              out.append(m.group(1))
+          out.append('\n=== SCRIPT SRC ===')
+          for m in re.finditer(r'<script[^>]*?src=["\']([^"\']+)', text, re.I|re.S):
+              out.append(m.group(1))
+          out.append('\n=== LINES WITH EJS / EMULATOR / REMOTE / LOADER / IFRAME ===')
+          for i,line in enumerate(text.splitlines(),1):
+              if re.search(r'EJS|EmulatorJS|emulator|remote|loader|iframe|play_895|gameUrl|game_url|rom|src=', line, re.I):
+                  s=line.strip()
+                  if len(s)>1200: s=s[:1200]+'…'
+                  out.append(f'{i}: {s}')
+          Path('inspection-summary.txt').write_text('\n'.join(out), encoding='utf-8')
+          PY
+      - name: Commit inspection files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inspection-source.html inspection-summary.txt
+          git commit -m 'inspect retrogames emulator source' || exit 0
+          git push
