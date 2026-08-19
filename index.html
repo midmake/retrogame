@@ -9,87 +9,23 @@
     *{box-sizing:border-box}
     html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden}
     body{min-height:100dvh;touch-action:manipulation}
-
-    .intro{
-      position:fixed;
-      top:max(18px,env(safe-area-inset-top));
-      left:12px;
-      right:12px;
-      z-index:2;
-      color:#fff;
-      text-align:center;
-      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      font-size:clamp(18px,5vw,24px);
-      font-weight:800;
-      letter-spacing:.015em;
-      pointer-events:none;
-      user-select:none;
-    }
-
-    .stage{
-      position:fixed;
-      left:50%;
-      top:50%;
-      width:512px;
-      height:448px;
-      overflow:hidden;
-      background:#000;
-      transform-origin:center center;
-      transform:translate(-50%,-50%) scale(var(--fit,1));
-    }
-
-    iframe{
-      position:absolute;
-      left:-208.5px;
-      top:-231px;
-      width:980px;
-      height:1000px;
-      border:0;
-      margin:0;
-      background:#000;
-    }
-
-    body.legacy .stage{inset:0;left:0;top:0;width:100%;height:100%;transform:none}
-    body.legacy iframe{left:0;top:0;width:100%;height:100%}
-
+    .intro{position:fixed;top:max(18px,env(safe-area-inset-top));left:12px;right:12px;z-index:2;color:#fff;text-align:center;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:clamp(18px,5vw,24px);font-weight:800;letter-spacing:.015em;pointer-events:none;user-select:none}
+    .stage{position:fixed;left:50%;top:50%;width:512px;height:448px;overflow:hidden;background:#000;transform-origin:center center;transform:translate(-50%,-50%) scale(var(--fit,1))}
+    iframe{position:absolute;left:-208.5px;top:-231px;width:980px;height:1000px;border:0;margin:0;background:#000}
     @media (orientation:landscape){.intro{display:none}}
   </style>
 </head>
 <body>
   <div class="intro">Encoste. Jogue. Divirta-se.</div>
-
   <main class="stage" id="stage">
-    <iframe
-      id="gameFrame"
-      src="https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No"
-      title="Jogo"
-      scrolling="no"
-      allowfullscreen
-      webkitallowfullscreen
-      mozallowfullscreen
-      sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-presentation"
-      allow="autoplay; fullscreen; gamepad">
-    </iframe>
+    <iframe id="gameFrame" src="https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No" title="Jogo" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-presentation" allow="autoplay; fullscreen; gamepad"></iframe>
   </main>
-
   <script>
     const params=new URLSearchParams(location.search);
-    const requested=(params.get('game')||'895').trim();
-    const frame=document.getElementById('gameFrame');
-
-    // Produção atual: IDs numéricos usam exatamente o player aprovado da RetroGames.cz.
-    if(/^\d{1,5}$/.test(requested)){
-      frame.src=`https://www.retrogames.cz/play_${requested}-SNES.php?emulator=EJS&Ads=No`;
-    }
-    // Compatibilidade: mantém funcionando os 93 links antigos já distribuídos.
-    else if(/^[a-z0-9-]{3,140}$/i.test(requested)){
-      document.body.classList.add('legacy');
-      frame.removeAttribute('sandbox');
-      frame.src=`https://www.retrogames.cc/embed/${requested.toLowerCase()}.html`;
-    }
-
+    const raw=(params.get('game')||'895').trim();
+    const game=/^\d{1,5}$/.test(raw)?raw:'895';
+    document.getElementById('gameFrame').src=`https://www.retrogames.cz/play_${game}-SNES.php?emulator=EJS&Ads=No`;
     function fitPlayer(){
-      if(document.body.classList.contains('legacy')) return;
       const safeW=Math.max(1,window.innerWidth-4);
       const safeH=Math.max(1,window.innerHeight-4);
       const scale=Math.min(safeW/512,safeH/448);
