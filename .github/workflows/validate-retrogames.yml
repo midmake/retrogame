@@ -1,0 +1,44 @@
+name: Validate RetroGames catalog
+
+on:
+  push:
+    paths:
+      - '.github/workflows/validate-retrogames.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate catalog
+        shell: bash
+        run: |
+          set -euo pipefail
+          git show 82a2939733f378e6e9b38f42ffa1bc28337b84bf:snes-catalog.json > /tmp/catalog.json
+          : > working-games.txt
+          : > failed-games.txt
+          total=$(jq length /tmp/catalog.json)
+          for i in $(seq 0 $((total-1))); do
+            id=$(jq -r ".[$i].id" /tmp/catalog.json)
+            title=$(jq -r ".[$i].title" /tmp/catalog.json)
+            url="https://www.retrogames.cz/play_${id}-SNES.php?emulator=EJS&Ads=No"
+            body=$(curl -L --max-time 20 --retry 1 -sS "$url" || true)
+            if printf '%s' "$body" | grep -q 'EJS_gameUrl' && printf '%s' "$body" | grep -q "EJS_player"; then
+              printf '%s\t%s\n' "$id" "$title" >> working-games.txt
+            else
+              printf '%s\t%s\n' "$id" "$title" >> failed-games.txt
+            fi
+          done
+          printf 'WORKING=%s\nFAILED=%s\n' "$(wc -l < working-games.txt)" "$(wc -l < failed-games.txt)" > validation-summary.txt
+      - name: Commit validation result
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add working-games.txt failed-games.txt validation-summary.txt
+          git commit -m 'temporary RetroGames catalog validation' || exit 0
+          git push
