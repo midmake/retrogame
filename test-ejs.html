@@ -3,64 +3,59 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#090a0c">
   <title>Divirta-se</title>
   <style>
     *{box-sizing:border-box}
-    html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden}
-    body{min-height:100dvh;touch-action:manipulation}
-
-    /* O player real da RetroGames mede 512 x 448. Esta janela mostra somente ele. */
-    .stage{
-      position:fixed;
-      left:50%;
-      top:50%;
-      width:512px;
-      height:448px;
-      overflow:hidden;
-      background:#000;
-      transform-origin:center center;
-      transform:translate(-50%,-50%) scale(var(--fit,1));
-    }
-
-    /* Medição real da página em viewport de 980px:
-       #game = x 208.5 / y 231 / 512 x 448. */
-    iframe{
-      position:absolute;
-      left:-208.5px;
-      top:-231px;
-      width:980px;
-      height:1000px;
-      border:0;
-      margin:0;
-      background:#000;
-    }
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#090a0c;color:#fff;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    body{min-height:100dvh;touch-action:manipulation;background:radial-gradient(circle at 50% 30%,#17191d 0,#0d0e11 42%,#07080a 100%)}
+    .shell{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 8px max(8px,env(safe-area-inset-bottom));gap:8px}
+    .intro{text-align:center;flex:0 0 auto;line-height:1.15;text-shadow:0 2px 8px #000;user-select:none}
+    .intro strong{display:block;font-size:clamp(17px,4.8vw,22px);letter-spacing:.03em}
+    .intro span{display:block;margin-top:4px;font-size:clamp(10px,3vw,12px);opacity:.65}
+    .intro small{display:block;margin-top:3px;font-size:clamp(9px,2.7vw,11px);opacity:.42}
+    .screen{position:relative;flex:0 0 auto;width:var(--w,512px);height:var(--h,448px);overflow:hidden;background:#000;border:1px solid rgba(255,255,255,.09);border-radius:5px;box-shadow:0 10px 32px rgba(0,0,0,.42);contain:strict}
+    iframe{position:absolute;left:calc(-208.5px * var(--scale,1));top:calc(-231px * var(--scale,1));width:calc(980px * var(--scale,1));height:calc(1000px * var(--scale,1));border:0;margin:0;background:#000;transform-origin:0 0;transform:scale(var(--scale,1));}
+    @media (orientation:landscape){.shell{padding:2px 4px;gap:3px}.intro strong{font-size:12px}.intro span{font-size:9px;margin-top:1px}.intro small{display:none}}
   </style>
 </head>
 <body>
-  <main class="stage" id="stage">
-    <iframe
-      src="https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No"
-      title="Mega Man X2"
-      scrolling="no"
-      allowfullscreen
-      webkitallowfullscreen
-      mozallowfullscreen
-      sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-presentation"
-      allow="autoplay; fullscreen; gamepad">
-    </iframe>
+  <main class="shell">
+    <header class="intro">
+      <strong>Encoste. Jogue. Divirta-se.</strong>
+      <span>Aguarde alguns instantes para o jogo carregar.</span>
+      <small>Para uma melhor experiência, use o celular na horizontal.</small>
+    </header>
+    <section class="screen" id="screen">
+      <iframe
+        src="https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No"
+        title="Mega Man X2"
+        scrolling="no"
+        allowfullscreen webkitallowfullscreen mozallowfullscreen
+        sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-presentation"
+        allow="autoplay; fullscreen; gamepad">
+      </iframe>
+    </section>
   </main>
-
   <script>
-    function fitPlayer(){
-      const safeW = Math.max(1, window.innerWidth - 4);
-      const safeH = Math.max(1, window.innerHeight - 4);
-      const scale = Math.min(safeW / 512, safeH / 448);
-      document.documentElement.style.setProperty('--fit', String(scale));
+    const screen=document.getElementById('screen');
+    let raf=0;
+    function fit(){
+      cancelAnimationFrame(raf);
+      raf=requestAnimationFrame(()=>{
+        const landscape=innerWidth>innerHeight;
+        const reserve=landscape?34:86;
+        const availW=Math.max(1,innerWidth-8);
+        const availH=Math.max(1,innerHeight-reserve);
+        const s=Math.min(1,availW/512,availH/448);
+        document.documentElement.style.setProperty('--scale',s);
+        document.documentElement.style.setProperty('--w',(512*s)+'px');
+        document.documentElement.style.setProperty('--h',(448*s)+'px');
+      });
     }
-    fitPlayer();
-    addEventListener('resize', fitPlayer, {passive:true});
-    addEventListener('orientationchange', fitPlayer, {passive:true});
+    fit();
+    addEventListener('resize',fit,{passive:true});
+    addEventListener('orientationchange',fit,{passive:true});
   </script>
 </body>
 </html>
