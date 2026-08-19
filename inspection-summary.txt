@@ -1,0 +1,137 @@
+SOURCE_BYTES=81903
+
+=== IFRAME SRC ===
+tabulkahodnoceni.php?language=EN&id=895&platforma=SNES
+diskuse_iframe.php?id=895&platforma=SNES&language=EN
+
+=== SCRIPT SRC ===
+https://www.googletagmanager.com/gtag/js?id=UA-121663504-1
+https://platform-api.sharethis.com/js/sharethis.js#property=648a16896fc24400124f2957&product=sticky-share-buttons&source=platform
+mouseover_popup.js
+https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=948246521891947&autoLogAppEvents=1
+EJS/loader.js
+multiswap.js
+multiswap.js
+multiswap.js
+multiswap.js
+multiswap.js
+multiswap.js
+multiswap.js
+multiswap.js
+multiswap.js
+multiswap.js
+multiswap.js
+multiswap.js
+multiswap.js
+multiswap.js
+multiswap.js
+https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js
+
+=== LINES WITH EJS / EMULATOR / REMOTE / LOADER / IFRAME ===
+16: <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121663504-1"></script>
+50: <meta property="og:url" content="https://www.retrogames.cz/play_895-SNES.php" />
+63: <link rel="alternate" hreflang="cs" href="https://www.retrogames.cz/play_895-SNES.php?language=CZ" />
+64: <link rel="alternate" hreflang="en" href="https://www.retrogames.cz/play_895-SNES.php?language=EN" />
+65: <link rel="canonical" href="https://www.retrogames.cz/play_895-SNES.php" />
+69: <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=648a16896fc24400124f2957&product=sticky-share-buttons&source=platform" async="async"></script>
+75: <script src="mouseover_popup.js" language="JavaScript" type="text/javascript"></script>
+77: <script>(function(a,b,c,d,e){e=a.createElement(b);a=a.getElementsByTagName(b)[0];e.async=1;e.src=c;a.parentNode.insertBefore(e,a)})(document,'script','//screechingfurniture.com/ec5ecc04f393117434fa6a475ae44308b6126e2c6f3bbcd089995ebc24a827d6755948ee254a3a8f1858dfd80e0252c00cb3825cc508a853fdbbe3d812a9');</script>
+89: <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=948246521891947&autoLogAppEvents=1" nonce="04vInUkn">
+114: <a href="index.php"><img src="grafika/Loga/Logo03.jpg" width="430" height="120" border="0" alt="RetroGames.cz - staré hry ONLINE"></a>
+134: <img src='grafika/Loga/CM_oldman3.png'  hspace='0' vspace='0'>
+159: <img border="0" src="grafika/vlajky/gb_pidi.gif" width="16" height="11" alt="EN"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+163: <img border="0" src="grafika/vlajky/cz_pidi.gif" width="16" height="11" alt="CZ"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+167: <input type="image" name="vyhledat" alt="Search" src="grafika/cudliky/search_icon2.png" align="top">
+643: <a href="emulatory.php">Online Emulators</a>
+644: <a href="offline.php">Offline Emulators</a>
+713: <td><input type="image" name="vyhledat" alt="Search" src="grafika/cudliky/search_icon2.png" align="middle"></td>
+776: EJS_player = '#game';
+777: EJS_gameUrl = 'SNES/Mega_Man_X2.zip';	// Url to Game rom
+778: EJS_gameID = 895; 				// ID in your website, required for netplay.
+779: EJS_gameName = "Mega Man X2";
+780: EJS_color = "#FFA500";
+781: EJS_core = 'snes';
+782: EJS_pathtodata = "EJS/";
+783: EJS_mouse = false; 				// SNES mouse
+784: EJS_multitap = false; 					// SNES Multitap
+785: EJS_oldCores = true;
+787: <script src="EJS/loader.js"></script>
+807: <img src='grafika/ovladace/SNES_gamepad.gif' alt='SNES gamepad' width=228 height=125></font></b></td>
+879: If the game emulation is slow, try to speed it up by <a style=text-decoration:none href='?Ads=No'><font face='Arial' size='2' color=#FFFF00><b>reloading</b></font></a> this pa­ge without ads or choose a­no­ther emulator from this <a style=text-decoration:none href=#emulatory><font face='Arial' size='2' color=#FFFF00><b>table</b></font></a>.		</font></b></span></td>
+900: <iframe src="tabulkahodnoceni.php?language=EN&id=895&platforma=SNES" width="514" height="86" scrolling="no" marginheight="0" marginwidth="0" frameborder="0">
+901: </iframe>
+955: <img border="0" src="games/895/obal_SNES.gif" width="212" height="155"
+1040: <font face="Arial" size="2" color="#C0C0C0">Emulator:</font></td>
+1049: <b><font face="Arial" size="2" color="#FFFFFF">From Wikipedia, the free encyclopedia:</font></b>
+1052: <p align="justify"><font face="Arial" size="2" color="#C0C0C0">&nbsp;&nbsp;&nbsp;Mega Man X2, known as Rockman X2 in Japan, is a video game developed by Capcom for the Super Nintendo Entertainment System (SNES). The game was released in Japan on December 16, 1994 and in North America and PAL regions in 1995. It is the direct sequel to <a style='text-decoration:none' href='play_865-SNES.php'><font color=#FFFF00>Mega Man X</font></a>, released one year prior. Mega Man X2 takes place in the near future in which humans try to peacefully coexist with intelligent robots called 'Reploids', with some of the Reploids going 'Maverick' and threatening daily life. The plot follows the android protagonist X, a 'Maverick Hunter' who has saved humanity from the evil Sigma six months earlier. A trio of Mavericks calling themselves the 'X-Hunters' has arisen, intent on destroying X by luring him with bodyparts of his comrade Zero, who died in the conflict with Sigma.
+1058: <img border='0' src='games/895/SNES_03.gif' width='256' height='224' align='right' hspace='0' vspace='2' alt='Mega Man X2 (SNES)' title='Mega Man X2 (SNES)'></td>
+1069: &nbsp;&nbsp;&nbsp;Six months following the incident, X assumes the head of the Maverick Hunters. X tracks a 'manufactured Maverick' bearing Sigma's emblem to a Reploid factory, where he launches a full assault. However, despite Sigma's apparent death and X's recent efforts, the Maverick rebellion continues. Three powerful Mavericks—Serges, Agile, and Violen—form a group called the 'X-Hunters' and gain control of the North Pole. In the time between Sigma's demise and the trio's sudden uprising, Serges has collected the deceased Zero's bodyparts. After the factory mission, X is assigned to seek and exterminate eight Maverick leaders on a large continent directly south of the North Pole. The X-Hunters contact the Maverick Hunters shortly thereafter and taunt them with Zero's body. The X-Hunters drift among the eight Maverick locations and attempt to lure X out, each one promising the protagonist a piece of Zero if he can defeat them.
+1075: &nbsp;&nbsp;&nbsp;Mega Man X2 features a number of extra gameplay elements. At certain times, the player can pilot vehicles including an attack mech in Wheel Gator's stage and an attack hovercycle in Overdrive Ostrich's stage. Each of the eight stages contains an optional entrance for a battle with one of the three X-Hunters, should the player select that stage when one of them is present. Defeating an X-Hunter will earn the player a piece of Zero, which may affect the storyline late in the game. Like the first Mega Man X, players can locate and acquire numerous hidden power-ups. 'Heart Tanks' extend the player's maximum life bar, 'Sub-Tanks' store life energy for later use, and armor upgrade capsules grant a set of new abilities. For example, the leg part will allow the player to perform a dash in mid-air, while the X-Buster part will allow for two charged blasts in succession. When specific conditions are met a special capsule is unlocked in one of the game's final stages, allowing X to perform a one-shot kill attack (the 'Shoryuken') used by characters from Capcom's Street Fighter series.</font></p>
+1127: <img border="0" src="grafika/konzole/SNES_mini2.png" width="120" height="85" align="right" hspace="0" onmouseover="showtrail('grafika/konzole/SNES_big.png', 'Super Nintendo Entertainment System (SNES) with controller',706,500)" 									onmouseout="hidetrail()">
+1158: <a name="emulatory"></a>&nbsp;</td>
+1162: <b><font face="Arial" size="2" color="#FFFFFF">Available online emulators:</font></b></td>
+1168: 5 different online emulators are available for Mega Man X2. These emulators differ not only in the technology they use to emulate old games, but also in 								support of various game controllers, multiplayer mode, mobile phone touchscreen, emulation speed, absence or presence of embedded ads and in many other parameters. For
+1169: maximum gaming enjoyment, it's important to choose the right emulator, because on each PC and in different Internet browsers, the individual emulators behave differently. The basic
+1170: features of each emulator available for this game Mega Man X2 are summarized in the following table:
+1178: <b><font face="Arial" size="2" color="#FFFFFF">Emulator</font></b>
+1198: <b><a style="text-decoration: none" href="?emulator=EJS">
+1199: <font face="Arial" size="2" color="#FF0000">EmulatorJS</font></a></b>
+1219: <b><a style="text-decoration: none" href="?emulator=js">
+1240: <b><a style="text-decoration: none" href="?emulator=flash">
+1261: <b><a style="text-decoration: none" href="?emulator=retrocc">
+1282: <b><a style="text-decoration: none" href="?emulator=emulatrix">
+1351: <a href="play_865-SNES.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Mega Man X" src="games/865/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES1'></a>
+1360: myimages[i].src=preloadimages.arguments[i]
+1366: <script type='text/javascript' src='multiswap.js'>
+1375: <a href="play_933-SNES.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Mega Man X3" src="games/933/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES2'></a>
+1384: myimages[i].src=preloadimages.arguments[i]
+1390: <script type='text/javascript' src='multiswap.js'>
+1399: <a href="play_904-SNES.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Mega Man 7" src="games/904/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES3'></a>
+1408: myimages[i].src=preloadimages.arguments[i]
+1414: <script type='text/javascript' src='multiswap.js'>
+1423: <a href="play_346-NES.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Mega Man 2" src="games/346/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES4'></a>
+1432: myimages[i].src=preloadimages.arguments[i]
+1438: <script type='text/javascript' src='multiswap.js'>
+1447: <a href="play_619-NES.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Mega Man 3" src="games/619/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES5'></a>
+1456: myimages[i].src=preloadimages.arguments[i]
+1462: <script type='text/javascript' src='multiswap.js'>
+1513: <a href="play_836-NES.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Mega Man 4" src="games/836/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES6'></a>
+1522: myimages[i].src=preloadimages.arguments[i]
+1528: <script type='text/javascript' src='multiswap.js'>
+1537: <a href="play_846-NES.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Mega Man 5" src="games/846/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES7'></a>
+1546: myimages[i].src=preloadimages.arguments[i]
+1552: <script type='text/javascript' src='multiswap.js'>
+1561: <a href="play_860-NES.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Mega Man 6" src="games/860/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES8'></a>
+1570: myimages[i].src=preloadimages.arguments[i]
+1576: <script type='text/javascript' src='multiswap.js'>
+1585: <a href="play_116-NES.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Mega Man" src="games/116/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES9'></a>
+1594: myimages[i].src=preloadimages.arguments[i]
+1600: <script type='text/javascript' src='multiswap.js'>
+1609: <a href="play_1338-Genesis.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Mega Man: The Wily Wars" src="games/1338/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES10'></a>
+1618: myimages[i].src=preloadimages.arguments[i]
+1624: <script type='text/javascript' src='multiswap.js'>
+1675: <a href="play_1128-N64.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Mega Man Legends" src="games/1128/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES11'></a>
+1684: myimages[i].src=preloadimages.arguments[i]
+1690: <script type='text/javascript' src='multiswap.js'>
+1699: <a href="play_1192-Genesis.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Pulseman" src="games/1192/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES12'></a>
+1708: myimages[i].src=preloadimages.arguments[i]
+1714: <script type='text/javascript' src='multiswap.js'>
+1723: <a href="play_1149-DOS.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Electroman" src="games/1149/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES13'></a>
+1732: myimages[i].src=preloadimages.arguments[i]
+1738: <script type='text/javascript' src='multiswap.js'>
+1747: <a href="play_478-DOS.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Mario and Luigi" src="games/478/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES14'></a>
+1756: myimages[i].src=preloadimages.arguments[i]
+1762: <script type='text/javascript' src='multiswap.js'>
+1771: <a href="play_1439-NES.php" onFocus="if(this.blur)this.blur();"><img border="1" alt="Little Samson" src="games/1439/01.gif" style="border: 1px solid #808080" width="120" height="90" id='linkNES15'></a>
+1780: myimages[i].src=preloadimages.arguments[i]
+1786: <script type='text/javascript' src='multiswap.js'>
+1812: <b><font face="Arial" size="1" color="#FFFF00">Electroman</font></b></a>
+1852: <iframe
+1854: src="diskuse_iframe.php?id=895&platforma=SNES&language=EN"
+1860: ></iframe>
+1915: document.write('<img src="https://toplist.cz/dot.asp?id=1142145&http='+escape(document.referrer)+'&t='+escape(document.title)+
+1917: //--></script><noscript><img src="https://toplist.cz/dot.asp?id=1142145" border="0"
+1977: <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="RetroGames.cz" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+1982: <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+1983: <img alt="" border="0" src="https://www.paypal.com/en_CZ/i/scr/pixel.gif" width="1" height="1" />
+1988: <a href="https://www.buymeacoffee.com/RetroGames.cz" target="_blank"><img src="grafika/bmc_qr.png" style="width: 148px; height: auto;" hspace='0' alt="BUC-QR" title="Support us and buy us a beer :-)" /></a>
