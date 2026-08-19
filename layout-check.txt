@@ -1,0 +1,21 @@
+{
+  "game": {
+    "x": 208.5,
+    "y": 231,
+    "width": 512,
+    "height": 448
+  },
+  "parent": {
+    "x": 208.5,
+    "y": 231,
+    "width": 512,
+    "height": 448
+  },
+  "scrollWidth": 1010,
+  "scrollHeight": 4095,
+  "bodyWidth": 964,
+  "bodyMargin": "8px",
+  "gameChildren": 1,
+  "gameText": "",
+  "errors": []
+}
