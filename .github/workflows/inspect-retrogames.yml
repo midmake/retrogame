@@ -13,44 +13,52 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch source and headers
+      - name: Measure player in browser
         run: |
-          curl -L --fail --silent --show-error \
-            -A 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Version/17.0 Mobile/15E148 Safari/604.1' \
-            'https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No' \
-            -o inspection-source.html
-
-          {
-            echo '=== LOADER HEADERS ==='
-            curl -L -sS -D - -o /dev/null -H 'Origin: https://midmake.github.io' 'https://www.retrogames.cz/EJS/loader.js'
-            echo
-            echo '=== ROM HEADERS ==='
-            curl -L -sS -D - -o /dev/null -H 'Origin: https://midmake.github.io' 'https://www.retrogames.cz/SNES/Mega_Man_X2.zip'
-          } > cors-check.txt
-      - name: Extract emulator clues
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import re
-          text = Path('inspection-source.html').read_text('utf-8', errors='ignore')
-          out = []
-          out.append(f'SOURCE_BYTES={len(text.encode())}')
-          out.append('\n=== IFRAME SRC ===')
-          for m in re.finditer(r'<iframe[^>]*?src=["\']([^"\']+)', text, re.I|re.S):
-              out.append(m.group(1))
-          out.append('\n=== SCRIPT SRC ===')
-          for m in re.finditer(r'<script[^>]*?src=["\']([^"\']+)', text, re.I|re.S):
-              out.append(m.group(1))
-          out.append('\n=== EJS CONFIG ===')
-          for i,line in enumerate(text.splitlines(),1):
-              if re.search(r'EJS_|EJS/loader', line, re.I):
-                  out.append(f'{i}: {line.strip()}')
-          Path('inspection-summary.txt').write_text('\n'.join(out), encoding='utf-8')
-          PY
-      - name: Commit inspection files
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.55.0 >/dev/null 2>&1
+          npx playwright install --with-deps chromium >/dev/null 2>&1
+          cat > measure.mjs <<'JS'
+          import { chromium } from 'playwright';
+          const browser = await chromium.launch({headless:true});
+          const page = await browser.newPage({
+            viewport: {width:980,height:1000},
+            userAgent:'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Version/17.0 Mobile/15E148 Safari/604.1',
+            hasTouch:true,
+            isMobile:true
+          });
+          const errors=[];
+          page.on('console',m=>{ if(m.type()==='error') errors.push('console: '+m.text()) });
+          page.on('pageerror',e=>errors.push('pageerror: '+e.message));
+          await page.goto('https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No',{waitUntil:'domcontentloaded',timeout:90000});
+          await page.waitForSelector('#game',{timeout:90000});
+          await page.waitForTimeout(5000);
+          const data = await page.evaluate(() => {
+            const g=document.querySelector('#game');
+            const r=g.getBoundingClientRect();
+            const parent=g.parentElement?.getBoundingClientRect();
+            const html=document.documentElement;
+            const body=document.body;
+            return {
+              game:{x:r.x,y:r.y,width:r.width,height:r.height},
+              parent:parent?{x:parent.x,y:parent.y,width:parent.width,height:parent.height}:null,
+              scrollWidth:html.scrollWidth,
+              scrollHeight:html.scrollHeight,
+              bodyWidth:body.getBoundingClientRect().width,
+              bodyMargin:getComputedStyle(body).margin,
+              gameChildren:g.children.length,
+              gameText:(g.innerText||'').slice(0,500)
+            };
+          });
+          const out={...data,errors};
+          require('fs').writeFileSync('layout-check.txt',JSON.stringify(out,null,2));
+          await browser.close();
+          JS
+          node measure.mjs
+      - name: Commit measurement
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add inspection-source.html inspection-summary.txt cors-check.txt
-          git commit -m 'inspect retrogames emulator source' || exit 0
+          git add layout-check.txt
+          git commit -m 'measure retrogames player layout' || exit 0
           git push
