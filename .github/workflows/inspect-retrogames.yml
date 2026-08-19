@@ -13,12 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Measure player in installed Chrome
+      - name: Measure hash anchored player
         run: |
           set -euxo pipefail
-          which google-chrome || which google-chrome-stable || which chromium || which chromium-browser
-          npm init -y
-          npm install puppeteer-core@24.16.0
+          npm init -y >/dev/null 2>&1
+          npm install puppeteer-core@24.16.0 >/dev/null 2>&1
           cat > measure.mjs <<'JS'
           import puppeteer from 'puppeteer-core';
           import { writeFileSync } from 'node:fs';
@@ -29,31 +28,23 @@ jobs:
           if(!exe) throw new Error('Chrome not found');
           const browser=await puppeteer.launch({headless:true,executablePath:exe,args:['--no-sandbox']});
           const page=await browser.newPage();
-          await page.setViewport({width:980,height:1000,deviceScaleFactor:1,isMobile:true,hasTouch:true});
+          await page.setViewport({width:512,height:448,deviceScaleFactor:1,isMobile:true,hasTouch:true});
           await page.setUserAgent('Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Version/17.0 Mobile/15E148 Safari/604.1');
-          const errors=[];
-          page.on('console',m=>{if(m.type()==='error') errors.push('console: '+m.text())});
-          page.on('pageerror',e=>errors.push('pageerror: '+e.message));
-          await page.goto('https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No',{waitUntil:'domcontentloaded',timeout:90000});
+          await page.goto('https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No#game',{waitUntil:'domcontentloaded',timeout:90000});
           await page.waitForSelector('#game',{timeout:90000});
-          await new Promise(r=>setTimeout(r,5000));
+          await new Promise(r=>setTimeout(r,4000));
           const data=await page.evaluate(()=>{
             const g=document.querySelector('#game');
             const r=g.getBoundingClientRect();
-            const p=g.parentElement.getBoundingClientRect();
             return {
               game:{x:r.x,y:r.y,width:r.width,height:r.height},
-              parent:{x:p.x,y:p.y,width:p.width,height:p.height},
+              scrollX:window.scrollX,scrollY:window.scrollY,
+              innerWidth:window.innerWidth,innerHeight:window.innerHeight,
               scrollWidth:document.documentElement.scrollWidth,
-              scrollHeight:document.documentElement.scrollHeight,
-              innerWidth:window.innerWidth,
-              innerHeight:window.innerHeight,
-              bodyMargin:getComputedStyle(document.body).margin,
-              children:g.children.length,
-              html:g.outerHTML.slice(0,2000)
+              scrollHeight:document.documentElement.scrollHeight
             };
           });
-          writeFileSync('layout-check.txt',JSON.stringify({...data,errors},null,2));
+          writeFileSync('anchor-check.txt',JSON.stringify(data,null,2));
           await browser.close();
           JS
           node measure.mjs
@@ -61,6 +52,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add layout-check.txt
-          git commit -m 'measure retrogames player layout' || exit 0
+          git add anchor-check.txt
+          git commit -m 'measure hash anchored player' || exit 0
           git push
