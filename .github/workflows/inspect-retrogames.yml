@@ -13,45 +13,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Measure hash anchored player
+      - name: Inspect loader
         run: |
-          set -euxo pipefail
-          npm init -y >/dev/null 2>&1
-          npm install puppeteer-core@24.16.0 >/dev/null 2>&1
-          cat > measure.mjs <<'JS'
-          import puppeteer from 'puppeteer-core';
-          import { writeFileSync } from 'node:fs';
-          import { execSync } from 'node:child_process';
-          const candidates=['google-chrome','google-chrome-stable','chromium','chromium-browser'];
-          let exe='';
-          for (const c of candidates) { try { exe=execSync(`which ${c}`).toString().trim(); if(exe) break; } catch{} }
-          if(!exe) throw new Error('Chrome not found');
-          const browser=await puppeteer.launch({headless:true,executablePath:exe,args:['--no-sandbox']});
-          const page=await browser.newPage();
-          await page.setViewport({width:512,height:448,deviceScaleFactor:1,isMobile:true,hasTouch:true});
-          await page.setUserAgent('Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Version/17.0 Mobile/15E148 Safari/604.1');
-          await page.goto('https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No#game',{waitUntil:'domcontentloaded',timeout:90000});
-          await page.waitForSelector('#game',{timeout:90000});
-          await new Promise(r=>setTimeout(r,4000));
-          const data=await page.evaluate(()=>{
-            const g=document.querySelector('#game');
-            const r=g.getBoundingClientRect();
-            return {
-              game:{x:r.x,y:r.y,width:r.width,height:r.height},
-              scrollX:window.scrollX,scrollY:window.scrollY,
-              innerWidth:window.innerWidth,innerHeight:window.innerHeight,
-              scrollWidth:document.documentElement.scrollWidth,
-              scrollHeight:document.documentElement.scrollHeight
-            };
-          });
-          writeFileSync('anchor-check.txt',JSON.stringify(data,null,2));
-          await browser.close();
-          JS
-          node measure.mjs
-      - name: Commit measurement
+          curl -L --fail --silent --show-error 'https://www.retrogames.cz/EJS/loader.js' -o loader-retrogames.js
+          {
+            echo '=== LOADER ==='
+            cat loader-retrogames.js
+            echo
+            echo '=== OLD CORES / VERSION / DATA REFERENCES ==='
+            grep -Ein 'oldCores|version|data|retroarch|core|threads|wasm' loader-retrogames.js || true
+          } > loader-check.txt
+      - name: Commit inspection
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add anchor-check.txt
-          git commit -m 'measure hash anchored player' || exit 0
+          git add loader-retrogames.js loader-check.txt
+          git commit -m 'inspect retrogames EJS loader' || exit 0
           git push
