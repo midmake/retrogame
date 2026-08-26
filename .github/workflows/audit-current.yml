@@ -25,13 +25,12 @@ jobs:
             fi
             sleep 10
           done
-          echo 'Current wrapper did not appear on Pages in time.' >&2
           exit 1
       - name: Verify all 52 published wrapper routes
         run: |
           npm init -y >/dev/null 2>&1
           npm install jsdom@26 >/dev/null 2>&1
-          cat > /tmp/check.js <<'JS'
+          cat > check-wrapper.js <<'JS'
           const fs=require('fs');
           const {JSDOM}=require('jsdom');
           const html=fs.readFileSync('/tmp/live-index.html','utf8');
@@ -46,11 +45,11 @@ jobs:
             else fail.push({id,frame:frame&&frame.src,unavailable:!!unavailable});
             dom.window.close();
           }
-          fs.writeFileSync('wrapper-audit.json',JSON.stringify({total:ids.length,working:ok,failed:fail},null,2));
           fs.writeFileSync('wrapper-summary.txt',`TOTAL=${ids.length}\nWORKING=${ok}\nFAILED=${fail.length}\n`);
-          if(fail.length){ console.error(fail); process.exit(1); }
+          fs.writeFileSync('wrapper-audit.json',JSON.stringify({total:ids.length,working:ok,failed:fail},null,2));
+          if(fail.length) process.exit(1);
           JS
-          node /tmp/check.js
+          node check-wrapper.js
       - name: Recheck RetroGames source routes
         shell: bash
         run: |
@@ -74,7 +73,7 @@ jobs:
               f.write('ID\tGAME_NAME\tGAME_URL\n')
               for i,_,n,u in good:f.write(f'{i}\t{n}\t{u}\n')
           Path('source-summary.txt').write_text(f'TOTAL={len(ids)}\nWORKING={len(good)}\nFAILED={len(bad)}\n')
-          if bad: print('FAILED',bad); raise SystemExit(1)
+          if bad: raise SystemExit(1)
           PY
       - name: Commit temporary final audit
         if: always()
