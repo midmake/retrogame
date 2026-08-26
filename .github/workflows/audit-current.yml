@@ -1,0 +1,86 @@
+name: Audit current RetroGames routes
+
+on:
+  push:
+    paths:
+      - '.github/workflows/audit-current.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit all validated IDs against current RetroGames routes
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import concurrent.futures, requests, re, json
+          from pathlib import Path
+
+          ids = [800,900,865,785,882,289,1000,1614,802,1632,895,919,947,793,639,798,1021,933,1133,1008,994,857,1152,1743,1142,1266,1539,1669,1542,773,903,910,825,830,815,1452,904,1365,875,1320,887,861,1410,1538,1211,1157,1037,1579,1059,879,1509,1504]
+          variants = [
+              ('combined', lambda i:f'https://www.retrogames.cz/play_{i}-SNES.php?emulator=EJS&Ads=No'),
+              ('ejs_only', lambda i:f'https://www.retrogames.cz/play_{i}-SNES.php?emulator=EJS'),
+              ('ads_first', lambda i:f'https://www.retrogames.cz/play_{i}-SNES.php?Ads=No&emulator=EJS'),
+              ('plain', lambda i:f'https://www.retrogames.cz/play_{i}-SNES.php'),
+          ]
+          ses=requests.Session()
+          ses.headers['User-Agent']='Mozilla/5.0 (iPhone; CPU iPhone OS 26_2 like Mac OS X) AppleWebKit/605.1.15 Version/26.2 Mobile/15E148 Safari/604.1'
+          def one(i):
+              out={'id':i,'variants':{}}
+              for name,fn in variants:
+                  url=fn(i)
+                  try:
+                      r=ses.get(url,timeout=25,allow_redirects=True)
+                      t=r.text
+                      gm=re.search(r'EJS_gameName\s*=\s*["\']([^"\']+)',t)
+                      gu=re.search(r'EJS_gameUrl\s*=\s*["\']([^"\']+)',t)
+                      gp=re.search(r'EJS_player\s*=\s*["\']#game["\']',t)
+                      out['variants'][name]={
+                          'status':r.status_code,'final_url':r.url,'len':len(t),
+                          'has_name':bool(gm),'game_name':gm.group(1).strip() if gm else None,
+                          'has_url':bool(gu),'game_url':gu.group(1).strip() if gu else None,
+                          'has_player':bool(gp),
+                          'network_error':'Network Error' in t,
+                          'unavailable':('not available' in t.lower() or 'no longer available' in t.lower())
+                      }
+                  except Exception as e:
+                      out['variants'][name]={'error':repr(e)}
+              return out
+
+          with concurrent.futures.ThreadPoolExecutor(max_workers=10) as ex:
+              rows=list(ex.map(one,ids))
+          rows.sort(key=lambda x: ids.index(x['id']))
+          Path('audit-current.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2))
+          good=[]; bad=[]
+          for row in rows:
+              i=row['id']; v=row['variants']
+              working=[]
+              for name in ['combined','ejs_only','ads_first']:
+                  x=v.get(name,{})
+                  if x.get('status')==200 and x.get('has_name') and x.get('has_url') and x.get('has_player'):
+                      working.append(name)
+              source=v.get(working[0],{}) if working else {}
+              if working:
+                  good.append((i,source.get('game_name'),source.get('game_url'),','.join(working)))
+              else:
+                  bad.append((i,json.dumps(v,ensure_ascii=False)))
+          with open('audit-working.tsv','w') as f:
+              f.write('ID\tGAME_NAME\tGAME_URL\tWORKING_VARIANTS\n')
+              for x in good:f.write('\t'.join(map(str,x))+'\n')
+          with open('audit-failed.tsv','w') as f:
+              f.write('ID\tDETAILS\n')
+              for x in bad:f.write('\t'.join(map(str,x))+'\n')
+          Path('audit-summary.txt').write_text(f'TOTAL={len(ids)}\nWORKING={len(good)}\nFAILED={len(bad)}\n')
+          PY
+      - name: Commit temporary audit outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add audit-current.json audit-working.tsv audit-failed.tsv audit-summary.txt
+          git commit -m 'temporary current RetroGames route audit' || exit 0
+          git push
