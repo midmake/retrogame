@@ -23,30 +23,49 @@
   </main>
   <script>
     (()=>{
-      // IDs conferidos individualmente em 21/08/2026:
-      // título correto + página SNES correta + EJS_gameName + EJS_gameUrl + EJS_player.
-      const VALID_GAMES=new Set([
-        '800','900','865','785','882','289','1000','1614','802','1632','895','919','947','793','639','798','1021','933',
-        '1133','1008','994','857','1152','1743','1142','1266','1539','1669','1542','773','903','910','825','830','815','1452',
-        '904','1365','875','1320','887','861','1410','1538','1211','1157','1037','1579','1059','879','1509','1504'
-      ]);
+      // Compatibilidade com links antigos: todos são convertidos para IDs atuais
+      // da RetroGames.cz. Nenhum link abaixo abre RetroGames.cc.
+      const LEGACY={
+        '22857-chrono-trigger-usa':'800','24569-final-fantasy-iii-usa':'900','17318-megaman-x-usa':'865',
+        '23926-donkey-kong-country-2-diddy-s-kong-quest-usa-en-fr':'785','24789-earthbound-usa':'882',
+        '23005-donkey-kong-country-usa':'289','19618-final-fantasy-ii-usa':'1000','23528-lufia-ii-rise-of-the-sinistrals-usa':'1614',
+        '24938-kirby-super-star-usa':'802','23797-tetris-attack-usa-en-ja':'1632','19996-megaman-x2-usa':'895',
+        '23550-super-street-fighter-ii-the-new-challengers-usa':'919','16823-secret-of-mana-usa':'947',
+        '24621-teenage-mutant-ninja-turtles-iv-turtles-in-time-usa':'793','23973-super-castlevania-iv-usa':'639',
+        '23268-contra-iii-the-alien-wars-usa':'798','24602-donkey-kong-country-3-dixie-kong-s-double-trouble-usa-en-fr':'1021',
+        '19667-megaman-x3-usa':'933','20197-street-fighter-ii-turbo-hyper-fighting-usa':'1133','23292-demon-s-crest-usa':'1008',
+        '23950-illusion-of-gaia-usa':'994','23492-super-punch-out-usa':'857','22537-actraiser-usa':'1152',
+        '23381-nba-jam-tournament-edition-usa':'1743','23010-street-fighter-alpha-2-usa':'1142','23586-secret-of-evermore-usa':'1266',
+        '23539-harvest-moon-usa':'1539','22571-super-turrican-2-usa':'1669','24634-cybernator-usa':'1542',
+        '23368-lost-vikings-ii-the-usa':'773','22847-zombies-ate-my-neighbors-usa':'903','23881-top-gear-usa':'910',
+        '24623-final-fight-3-usa':'825','19754-star-fox-usa':'830','20082-f-zero-usa':'815','24868-gradius-iii-usa':'1452',
+        '16692-megaman-vii-usa':'904','24114-super-bomberman-2-usa':'1365','17355-killer-instinct-usa':'875',
+        '24121-legend-of-the-mystical-ninja-the-usa':'1320','24075-adventures-of-batman-robin-the-usa':'887',
+        '19822-breath-of-fire-usa':'861','23992-saturday-night-slam-masters-usa':'1410','23751-axelay-usa':'1538',
+        '24678-top-gear-2-usa':'1211','22660-magical-quest-starring-mickey-mouse-the-usa':'1157',
+        '17398-super-bomberman-usa':'1037','19953-uniracers-usa':'1579','24481-super-ghouls-n-ghosts-usa':'1059',
+        '22811-bust-a-move-usa':'879','23818-super-turrican-usa':'1509','24765-ninja-gaiden-trilogy-usa':'1504'
+      };
+
       const params=new URLSearchParams(location.search);
-      const requested=params.get('game');
+      const raw=(params.get('game')||'895').trim();
+      let game=null;
+
+      if(/^\d{1,5}$/.test(raw)) game=raw;
+      else game=LEGACY[raw.toLowerCase()]||null;
+
       const frame=document.getElementById('gameFrame');
       const stage=document.getElementById('stage');
-
-      if(requested!==null){
-        const game=requested.trim();
-        if(!VALID_GAMES.has(game)){
-          stage.remove();
-          const msg=document.createElement('div');
-          msg.className='unavailable';
-          msg.textContent='Jogo indisponível.';
-          document.body.appendChild(msg);
-          return;
-        }
-        frame.src=`https://www.retrogames.cz/play_${game}-SNES.php?emulator=EJS&Ads=No`;
+      if(!game){
+        stage.remove();
+        const msg=document.createElement('div');
+        msg.className='unavailable';
+        msg.textContent='Jogo indisponível.';
+        document.body.appendChild(msg);
+        return;
       }
+
+      frame.src=`https://www.retrogames.cz/play_${game}-SNES.php?emulator=EJS&Ads=No`;
 
       function fitPlayer(){
         const safeW=Math.max(1,window.innerWidth-4);
