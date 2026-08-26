@@ -1,0 +1,2758 @@
+[
+  {
+    "id": 800,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_800-SNES.php?emulator=EJS&Ads=No",
+        "len": 79886,
+        "has_name": true,
+        "game_name": "Chrono Trigger",
+        "has_url": true,
+        "game_url": "SNES/Chrono_Trigger.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_800-SNES.php?emulator=EJS",
+        "len": 82058,
+        "has_name": true,
+        "game_name": "Chrono Trigger",
+        "has_url": true,
+        "game_url": "SNES/Chrono_Trigger.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_800-SNES.php?Ads=No&emulator=EJS",
+        "len": 79886,
+        "has_name": true,
+        "game_name": "Chrono Trigger",
+        "has_url": true,
+        "game_url": "SNES/Chrono_Trigger.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_800-SNES.php",
+        "len": 82058,
+        "has_name": true,
+        "game_name": "Chrono Trigger",
+        "has_url": true,
+        "game_url": "SNES/Chrono_Trigger.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 900,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_900-SNES.php?emulator=EJS&Ads=No",
+        "len": 83137,
+        "has_name": true,
+        "game_name": "Final Fantasy VI",
+        "has_url": true,
+        "game_url": "SNES/Final_Fantasy_VI_(EN).zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_900-SNES.php?emulator=EJS",
+        "len": 85309,
+        "has_name": true,
+        "game_name": "Final Fantasy VI",
+        "has_url": true,
+        "game_url": "SNES/Final_Fantasy_VI_(EN).zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_900-SNES.php?Ads=No&emulator=EJS",
+        "len": 83137,
+        "has_name": true,
+        "game_name": "Final Fantasy VI",
+        "has_url": true,
+        "game_url": "SNES/Final_Fantasy_VI_(EN).zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_900-SNES.php",
+        "len": 85309,
+        "has_name": true,
+        "game_name": "Final Fantasy VI",
+        "has_url": true,
+        "game_url": "SNES/Final_Fantasy_VI_(EN).zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 865,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_865-SNES.php?emulator=EJS&Ads=No",
+        "len": 82012,
+        "has_name": true,
+        "game_name": "Mega Man X",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_X.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_865-SNES.php?emulator=EJS",
+        "len": 84184,
+        "has_name": true,
+        "game_name": "Mega Man X",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_X.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_865-SNES.php?Ads=No&emulator=EJS",
+        "len": 82012,
+        "has_name": true,
+        "game_name": "Mega Man X",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_X.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_865-SNES.php",
+        "len": 84184,
+        "has_name": true,
+        "game_name": "Mega Man X",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_X.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 785,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_785-SNES.php?emulator=EJS&Ads=No",
+        "len": 79928,
+        "has_name": true,
+        "game_name": "Donkey Kong Country 2: Diddy’s Kong Quest",
+        "has_url": true,
+        "game_url": "SNES/DKC2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_785-SNES.php?emulator=EJS",
+        "len": 82100,
+        "has_name": true,
+        "game_name": "Donkey Kong Country 2: Diddy’s Kong Quest",
+        "has_url": true,
+        "game_url": "SNES/DKC2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_785-SNES.php?Ads=No&emulator=EJS",
+        "len": 79928,
+        "has_name": true,
+        "game_name": "Donkey Kong Country 2: Diddy’s Kong Quest",
+        "has_url": true,
+        "game_url": "SNES/DKC2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_785-SNES.php",
+        "len": 82100,
+        "has_name": true,
+        "game_name": "Donkey Kong Country 2: Diddy’s Kong Quest",
+        "has_url": true,
+        "game_url": "SNES/DKC2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 882,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_882-SNES.php?emulator=EJS&Ads=No",
+        "len": 81361,
+        "has_name": true,
+        "game_name": "EarthBound",
+        "has_url": true,
+        "game_url": "SNES/Earthbound.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_882-SNES.php?emulator=EJS",
+        "len": 83533,
+        "has_name": true,
+        "game_name": "EarthBound",
+        "has_url": true,
+        "game_url": "SNES/Earthbound.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_882-SNES.php?Ads=No&emulator=EJS",
+        "len": 81361,
+        "has_name": true,
+        "game_name": "EarthBound",
+        "has_url": true,
+        "game_url": "SNES/Earthbound.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_882-SNES.php",
+        "len": 83533,
+        "has_name": true,
+        "game_name": "EarthBound",
+        "has_url": true,
+        "game_url": "SNES/Earthbound.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 289,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_289-SNES.php?emulator=EJS&Ads=No",
+        "len": 76993,
+        "has_name": true,
+        "game_name": "Donkey Kong Country",
+        "has_url": true,
+        "game_url": "SNES/Donkey_Kong_Country.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_289-SNES.php?emulator=EJS",
+        "len": 79165,
+        "has_name": true,
+        "game_name": "Donkey Kong Country",
+        "has_url": true,
+        "game_url": "SNES/Donkey_Kong_Country.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_289-SNES.php?Ads=No&emulator=EJS",
+        "len": 76993,
+        "has_name": true,
+        "game_name": "Donkey Kong Country",
+        "has_url": true,
+        "game_url": "SNES/Donkey_Kong_Country.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_289-SNES.php",
+        "len": 79165,
+        "has_name": true,
+        "game_name": "Donkey Kong Country",
+        "has_url": true,
+        "game_url": "SNES/Donkey_Kong_Country.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1000,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1000-SNES.php?emulator=EJS&Ads=No",
+        "len": 79687,
+        "has_name": true,
+        "game_name": "Final Fantasy IV",
+        "has_url": true,
+        "game_url": "SNES/Final_Fantasy_IV.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1000-SNES.php?emulator=EJS",
+        "len": 81859,
+        "has_name": true,
+        "game_name": "Final Fantasy IV",
+        "has_url": true,
+        "game_url": "SNES/Final_Fantasy_IV.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1000-SNES.php?Ads=No&emulator=EJS",
+        "len": 79687,
+        "has_name": true,
+        "game_name": "Final Fantasy IV",
+        "has_url": true,
+        "game_url": "SNES/Final_Fantasy_IV.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1000-SNES.php",
+        "len": 81859,
+        "has_name": true,
+        "game_name": "Final Fantasy IV",
+        "has_url": true,
+        "game_url": "SNES/Final_Fantasy_IV.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 1614,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1614-SNES.php?emulator=EJS&Ads=No",
+        "len": 79322,
+        "has_name": true,
+        "game_name": "Lufia II: Rise of the Sinistrals",
+        "has_url": true,
+        "game_url": "SNES/Lufia_II.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1614-SNES.php?emulator=EJS",
+        "len": 81494,
+        "has_name": true,
+        "game_name": "Lufia II: Rise of the Sinistrals",
+        "has_url": true,
+        "game_url": "SNES/Lufia_II.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1614-SNES.php?Ads=No&emulator=EJS",
+        "len": 79322,
+        "has_name": true,
+        "game_name": "Lufia II: Rise of the Sinistrals",
+        "has_url": true,
+        "game_url": "SNES/Lufia_II.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1614-SNES.php",
+        "len": 81494,
+        "has_name": true,
+        "game_name": "Lufia II: Rise of the Sinistrals",
+        "has_url": true,
+        "game_url": "SNES/Lufia_II.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 802,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_802-SNES.php?emulator=EJS&Ads=No",
+        "len": 77288,
+        "has_name": true,
+        "game_name": "Kirby Super Star",
+        "has_url": true,
+        "game_url": "SNES/Kirby_Super_Star.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_802-SNES.php?emulator=EJS",
+        "len": 79460,
+        "has_name": true,
+        "game_name": "Kirby Super Star",
+        "has_url": true,
+        "game_url": "SNES/Kirby_Super_Star.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_802-SNES.php?Ads=No&emulator=EJS",
+        "len": 77288,
+        "has_name": true,
+        "game_name": "Kirby Super Star",
+        "has_url": true,
+        "game_url": "SNES/Kirby_Super_Star.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_802-SNES.php",
+        "len": 79460,
+        "has_name": true,
+        "game_name": "Kirby Super Star",
+        "has_url": true,
+        "game_url": "SNES/Kirby_Super_Star.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 1632,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1632-SNES.php?emulator=EJS&Ads=No",
+        "len": 77888,
+        "has_name": true,
+        "game_name": "Tetris Attack",
+        "has_url": true,
+        "game_url": "SNES/Tetris_Attack.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1632-SNES.php?emulator=EJS",
+        "len": 80060,
+        "has_name": true,
+        "game_name": "Tetris Attack",
+        "has_url": true,
+        "game_url": "SNES/Tetris_Attack.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1632-SNES.php?Ads=No&emulator=EJS",
+        "len": 77888,
+        "has_name": true,
+        "game_name": "Tetris Attack",
+        "has_url": true,
+        "game_url": "SNES/Tetris_Attack.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1632-SNES.php",
+        "len": 80060,
+        "has_name": true,
+        "game_name": "Tetris Attack",
+        "has_url": true,
+        "game_url": "SNES/Tetris_Attack.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 895,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_895-SNES.php?emulator=EJS&Ads=No",
+        "len": 81664,
+        "has_name": true,
+        "game_name": "Mega Man X2",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_X2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_895-SNES.php?emulator=EJS",
+        "len": 83836,
+        "has_name": true,
+        "game_name": "Mega Man X2",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_X2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_895-SNES.php?Ads=No&emulator=EJS",
+        "len": 81664,
+        "has_name": true,
+        "game_name": "Mega Man X2",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_X2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_895-SNES.php",
+        "len": 83836,
+        "has_name": true,
+        "game_name": "Mega Man X2",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_X2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 919,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_919-SNES.php?emulator=EJS&Ads=No",
+        "len": 82227,
+        "has_name": true,
+        "game_name": "Super Street Fighter II: The New Challengers",
+        "has_url": true,
+        "game_url": "SNES/Super_Street_Fighter_II.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_919-SNES.php?emulator=EJS",
+        "len": 84399,
+        "has_name": true,
+        "game_name": "Super Street Fighter II: The New Challengers",
+        "has_url": true,
+        "game_url": "SNES/Super_Street_Fighter_II.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_919-SNES.php?Ads=No&emulator=EJS",
+        "len": 82227,
+        "has_name": true,
+        "game_name": "Super Street Fighter II: The New Challengers",
+        "has_url": true,
+        "game_url": "SNES/Super_Street_Fighter_II.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_919-SNES.php",
+        "len": 84399,
+        "has_name": true,
+        "game_name": "Super Street Fighter II: The New Challengers",
+        "has_url": true,
+        "game_url": "SNES/Super_Street_Fighter_II.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 947,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_947-SNES.php?emulator=EJS&Ads=No",
+        "len": 81554,
+        "has_name": true,
+        "game_name": "Secret of Mana",
+        "has_url": true,
+        "game_url": "SNES/Secret_of_Mana.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_947-SNES.php?emulator=EJS",
+        "len": 83726,
+        "has_name": true,
+        "game_name": "Secret of Mana",
+        "has_url": true,
+        "game_url": "SNES/Secret_of_Mana.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_947-SNES.php?Ads=No&emulator=EJS",
+        "len": 81554,
+        "has_name": true,
+        "game_name": "Secret of Mana",
+        "has_url": true,
+        "game_url": "SNES/Secret_of_Mana.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_947-SNES.php",
+        "len": 83726,
+        "has_name": true,
+        "game_name": "Secret of Mana",
+        "has_url": true,
+        "game_url": "SNES/Secret_of_Mana.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 793,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_793-SNES.php?emulator=EJS&Ads=No",
+        "len": 78453,
+        "has_name": true,
+        "game_name": "Teenage Mutant Ninja Turtles IV: Turtles in Time",
+        "has_url": true,
+        "game_url": "SNES/TMNT_4.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_793-SNES.php?emulator=EJS",
+        "len": 80625,
+        "has_name": true,
+        "game_name": "Teenage Mutant Ninja Turtles IV: Turtles in Time",
+        "has_url": true,
+        "game_url": "SNES/TMNT_4.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_793-SNES.php?Ads=No&emulator=EJS",
+        "len": 78453,
+        "has_name": true,
+        "game_name": "Teenage Mutant Ninja Turtles IV: Turtles in Time",
+        "has_url": true,
+        "game_url": "SNES/TMNT_4.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_793-SNES.php",
+        "len": 80625,
+        "has_name": true,
+        "game_name": "Teenage Mutant Ninja Turtles IV: Turtles in Time",
+        "has_url": true,
+        "game_url": "SNES/TMNT_4.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 639,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_639-SNES.php?emulator=EJS&Ads=No",
+        "len": 77308,
+        "has_name": true,
+        "game_name": "Super Castlevania IV",
+        "has_url": true,
+        "game_url": "SNES/Super_Castlevania_IV.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_639-SNES.php?emulator=EJS",
+        "len": 79480,
+        "has_name": true,
+        "game_name": "Super Castlevania IV",
+        "has_url": true,
+        "game_url": "SNES/Super_Castlevania_IV.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_639-SNES.php?Ads=No&emulator=EJS",
+        "len": 77308,
+        "has_name": true,
+        "game_name": "Super Castlevania IV",
+        "has_url": true,
+        "game_url": "SNES/Super_Castlevania_IV.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_639-SNES.php",
+        "len": 79480,
+        "has_name": true,
+        "game_name": "Super Castlevania IV",
+        "has_url": true,
+        "game_url": "SNES/Super_Castlevania_IV.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 798,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_798-SNES.php?emulator=EJS&Ads=No",
+        "len": 78233,
+        "has_name": true,
+        "game_name": "Contra III: The Alien Wars",
+        "has_url": true,
+        "game_url": "SNES/Contra_III.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_798-SNES.php?emulator=EJS",
+        "len": 80405,
+        "has_name": true,
+        "game_name": "Contra III: The Alien Wars",
+        "has_url": true,
+        "game_url": "SNES/Contra_III.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_798-SNES.php?Ads=No&emulator=EJS",
+        "len": 78233,
+        "has_name": true,
+        "game_name": "Contra III: The Alien Wars",
+        "has_url": true,
+        "game_url": "SNES/Contra_III.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_798-SNES.php",
+        "len": 80405,
+        "has_name": true,
+        "game_name": "Contra III: The Alien Wars",
+        "has_url": true,
+        "game_url": "SNES/Contra_III.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1021,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1021-SNES.php?emulator=EJS&Ads=No",
+        "len": 81348,
+        "has_name": true,
+        "game_name": "Donkey Kong Country 3: Dixie Kong’s Double Trouble!",
+        "has_url": true,
+        "game_url": "SNES/DKC3.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1021-SNES.php?emulator=EJS",
+        "len": 83520,
+        "has_name": true,
+        "game_name": "Donkey Kong Country 3: Dixie Kong’s Double Trouble!",
+        "has_url": true,
+        "game_url": "SNES/DKC3.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1021-SNES.php?Ads=No&emulator=EJS",
+        "len": 81348,
+        "has_name": true,
+        "game_name": "Donkey Kong Country 3: Dixie Kong’s Double Trouble!",
+        "has_url": true,
+        "game_url": "SNES/DKC3.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1021-SNES.php",
+        "len": 83520,
+        "has_name": true,
+        "game_name": "Donkey Kong Country 3: Dixie Kong’s Double Trouble!",
+        "has_url": true,
+        "game_url": "SNES/DKC3.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 933,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_933-SNES.php?emulator=EJS&Ads=No",
+        "len": 80930,
+        "has_name": true,
+        "game_name": "Mega Man X3",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_X3.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_933-SNES.php?emulator=EJS",
+        "len": 83102,
+        "has_name": true,
+        "game_name": "Mega Man X3",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_X3.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_933-SNES.php?Ads=No&emulator=EJS",
+        "len": 80930,
+        "has_name": true,
+        "game_name": "Mega Man X3",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_X3.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_933-SNES.php",
+        "len": 83102,
+        "has_name": true,
+        "game_name": "Mega Man X3",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_X3.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1133,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1133-SNES.php?emulator=EJS&Ads=No",
+        "len": 77390,
+        "has_name": true,
+        "game_name": "Street Fighter II Turbo: Hyper Fighting",
+        "has_url": true,
+        "game_url": "SNES/Street_Fighter_II_Turbo.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1133-SNES.php?emulator=EJS",
+        "len": 79562,
+        "has_name": true,
+        "game_name": "Street Fighter II Turbo: Hyper Fighting",
+        "has_url": true,
+        "game_url": "SNES/Street_Fighter_II_Turbo.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1133-SNES.php?Ads=No&emulator=EJS",
+        "len": 77390,
+        "has_name": true,
+        "game_name": "Street Fighter II Turbo: Hyper Fighting",
+        "has_url": true,
+        "game_url": "SNES/Street_Fighter_II_Turbo.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1133-SNES.php",
+        "len": 79562,
+        "has_name": true,
+        "game_name": "Street Fighter II Turbo: Hyper Fighting",
+        "has_url": true,
+        "game_url": "SNES/Street_Fighter_II_Turbo.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1008,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1008-SNES.php?emulator=EJS&Ads=No",
+        "len": 77760,
+        "has_name": true,
+        "game_name": "Demon’s Crest",
+        "has_url": true,
+        "game_url": "SNES/Demons_Crest.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1008-SNES.php?emulator=EJS",
+        "len": 79932,
+        "has_name": true,
+        "game_name": "Demon’s Crest",
+        "has_url": true,
+        "game_url": "SNES/Demons_Crest.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1008-SNES.php?Ads=No&emulator=EJS",
+        "len": 77760,
+        "has_name": true,
+        "game_name": "Demon’s Crest",
+        "has_url": true,
+        "game_url": "SNES/Demons_Crest.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1008-SNES.php",
+        "len": 79932,
+        "has_name": true,
+        "game_name": "Demon’s Crest",
+        "has_url": true,
+        "game_url": "SNES/Demons_Crest.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 994,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_994-SNES.php?emulator=EJS&Ads=No",
+        "len": 78575,
+        "has_name": true,
+        "game_name": "Illusion of Gaia",
+        "has_url": true,
+        "game_url": "SNES/Illusion_of_Gaia.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_994-SNES.php?emulator=EJS",
+        "len": 80747,
+        "has_name": true,
+        "game_name": "Illusion of Gaia",
+        "has_url": true,
+        "game_url": "SNES/Illusion_of_Gaia.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_994-SNES.php?Ads=No&emulator=EJS",
+        "len": 78575,
+        "has_name": true,
+        "game_name": "Illusion of Gaia",
+        "has_url": true,
+        "game_url": "SNES/Illusion_of_Gaia.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_994-SNES.php",
+        "len": 80747,
+        "has_name": true,
+        "game_name": "Illusion of Gaia",
+        "has_url": true,
+        "game_url": "SNES/Illusion_of_Gaia.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 857,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_857-SNES.php?emulator=EJS&Ads=No",
+        "len": 79549,
+        "has_name": true,
+        "game_name": "Super Punch-Out!!",
+        "has_url": true,
+        "game_url": "SNES/Super_Punch-Out.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_857-SNES.php?emulator=EJS",
+        "len": 81721,
+        "has_name": true,
+        "game_name": "Super Punch-Out!!",
+        "has_url": true,
+        "game_url": "SNES/Super_Punch-Out.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_857-SNES.php?Ads=No&emulator=EJS",
+        "len": 79549,
+        "has_name": true,
+        "game_name": "Super Punch-Out!!",
+        "has_url": true,
+        "game_url": "SNES/Super_Punch-Out.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_857-SNES.php",
+        "len": 81721,
+        "has_name": true,
+        "game_name": "Super Punch-Out!!",
+        "has_url": true,
+        "game_url": "SNES/Super_Punch-Out.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1152,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1152-SNES.php?emulator=EJS&Ads=No",
+        "len": 78210,
+        "has_name": true,
+        "game_name": "ActRaiser",
+        "has_url": true,
+        "game_url": "SNES/ActRaiser.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1152-SNES.php?emulator=EJS",
+        "len": 80382,
+        "has_name": true,
+        "game_name": "ActRaiser",
+        "has_url": true,
+        "game_url": "SNES/ActRaiser.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1152-SNES.php?Ads=No&emulator=EJS",
+        "len": 78210,
+        "has_name": true,
+        "game_name": "ActRaiser",
+        "has_url": true,
+        "game_url": "SNES/ActRaiser.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1152-SNES.php",
+        "len": 80382,
+        "has_name": true,
+        "game_name": "ActRaiser",
+        "has_url": true,
+        "game_url": "SNES/ActRaiser.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1743,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1743-SNES.php?emulator=EJS&Ads=No",
+        "len": 78413,
+        "has_name": true,
+        "game_name": "NBA Jam Tournament Edition",
+        "has_url": true,
+        "game_url": "SNES/NBA_Jam_TE.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1743-SNES.php?emulator=EJS",
+        "len": 80585,
+        "has_name": true,
+        "game_name": "NBA Jam Tournament Edition",
+        "has_url": true,
+        "game_url": "SNES/NBA_Jam_TE.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1743-SNES.php?Ads=No&emulator=EJS",
+        "len": 78413,
+        "has_name": true,
+        "game_name": "NBA Jam Tournament Edition",
+        "has_url": true,
+        "game_url": "SNES/NBA_Jam_TE.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1743-SNES.php",
+        "len": 80585,
+        "has_name": true,
+        "game_name": "NBA Jam Tournament Edition",
+        "has_url": true,
+        "game_url": "SNES/NBA_Jam_TE.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 1142,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1142-SNES.php?emulator=EJS&Ads=No",
+        "len": 78090,
+        "has_name": true,
+        "game_name": "Street Fighter Alpha 2",
+        "has_url": true,
+        "game_url": "SNES/Street_Fighter_Alpha_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1142-SNES.php?emulator=EJS",
+        "len": 80262,
+        "has_name": true,
+        "game_name": "Street Fighter Alpha 2",
+        "has_url": true,
+        "game_url": "SNES/Street_Fighter_Alpha_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1142-SNES.php?Ads=No&emulator=EJS",
+        "len": 78090,
+        "has_name": true,
+        "game_name": "Street Fighter Alpha 2",
+        "has_url": true,
+        "game_url": "SNES/Street_Fighter_Alpha_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1142-SNES.php",
+        "len": 80262,
+        "has_name": true,
+        "game_name": "Street Fighter Alpha 2",
+        "has_url": true,
+        "game_url": "SNES/Street_Fighter_Alpha_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1266,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1266-SNES.php?emulator=EJS&Ads=No",
+        "len": 80567,
+        "has_name": true,
+        "game_name": "Secret of Evermore",
+        "has_url": true,
+        "game_url": "SNES/Secret_of_Evermore.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1266-SNES.php?emulator=EJS",
+        "len": 82739,
+        "has_name": true,
+        "game_name": "Secret of Evermore",
+        "has_url": true,
+        "game_url": "SNES/Secret_of_Evermore.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1266-SNES.php?Ads=No&emulator=EJS",
+        "len": 80567,
+        "has_name": true,
+        "game_name": "Secret of Evermore",
+        "has_url": true,
+        "game_url": "SNES/Secret_of_Evermore.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1266-SNES.php",
+        "len": 82739,
+        "has_name": true,
+        "game_name": "Secret of Evermore",
+        "has_url": true,
+        "game_url": "SNES/Secret_of_Evermore.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 1539,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1539-SNES.php?emulator=EJS&Ads=No",
+        "len": 75944,
+        "has_name": true,
+        "game_name": "Harvest Moon",
+        "has_url": true,
+        "game_url": "SNES/Harvest_Moon.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1539-SNES.php?emulator=EJS",
+        "len": 78116,
+        "has_name": true,
+        "game_name": "Harvest Moon",
+        "has_url": true,
+        "game_url": "SNES/Harvest_Moon.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1539-SNES.php?Ads=No&emulator=EJS",
+        "len": 75944,
+        "has_name": true,
+        "game_name": "Harvest Moon",
+        "has_url": true,
+        "game_url": "SNES/Harvest_Moon.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1539-SNES.php",
+        "len": 78116,
+        "has_name": true,
+        "game_name": "Harvest Moon",
+        "has_url": true,
+        "game_url": "SNES/Harvest_Moon.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 1669,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1669-SNES.php?emulator=EJS&Ads=No",
+        "len": 77785,
+        "has_name": true,
+        "game_name": "Super Turrican 2",
+        "has_url": true,
+        "game_url": "SNES/Super_Turrican_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1669-SNES.php?emulator=EJS",
+        "len": 79957,
+        "has_name": true,
+        "game_name": "Super Turrican 2",
+        "has_url": true,
+        "game_url": "SNES/Super_Turrican_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1669-SNES.php?Ads=No&emulator=EJS",
+        "len": 77785,
+        "has_name": true,
+        "game_name": "Super Turrican 2",
+        "has_url": true,
+        "game_url": "SNES/Super_Turrican_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1669-SNES.php",
+        "len": 79957,
+        "has_name": true,
+        "game_name": "Super Turrican 2",
+        "has_url": true,
+        "game_url": "SNES/Super_Turrican_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 1542,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1542-SNES.php?emulator=EJS&Ads=No",
+        "len": 77265,
+        "has_name": true,
+        "game_name": "Cybernator",
+        "has_url": true,
+        "game_url": "SNES/Cybernator.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1542-SNES.php?emulator=EJS",
+        "len": 79437,
+        "has_name": true,
+        "game_name": "Cybernator",
+        "has_url": true,
+        "game_url": "SNES/Cybernator.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1542-SNES.php?Ads=No&emulator=EJS",
+        "len": 77265,
+        "has_name": true,
+        "game_name": "Cybernator",
+        "has_url": true,
+        "game_url": "SNES/Cybernator.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1542-SNES.php",
+        "len": 79437,
+        "has_name": true,
+        "game_name": "Cybernator",
+        "has_url": true,
+        "game_url": "SNES/Cybernator.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 773,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_773-SNES.php?emulator=EJS&Ads=No",
+        "len": 80068,
+        "has_name": true,
+        "game_name": "Lost Vikings II: Norse by Norsewest",
+        "has_url": true,
+        "game_url": "SNES/Lost_Vikings_II.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_773-SNES.php?emulator=EJS",
+        "len": 82240,
+        "has_name": true,
+        "game_name": "Lost Vikings II: Norse by Norsewest",
+        "has_url": true,
+        "game_url": "SNES/Lost_Vikings_II.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_773-SNES.php?Ads=No&emulator=EJS",
+        "len": 80068,
+        "has_name": true,
+        "game_name": "Lost Vikings II: Norse by Norsewest",
+        "has_url": true,
+        "game_url": "SNES/Lost_Vikings_II.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_773-SNES.php",
+        "len": 82240,
+        "has_name": true,
+        "game_name": "Lost Vikings II: Norse by Norsewest",
+        "has_url": true,
+        "game_url": "SNES/Lost_Vikings_II.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 903,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_903-SNES.php?emulator=EJS&Ads=No",
+        "len": 78583,
+        "has_name": true,
+        "game_name": "Zombies Ate My Neighbors",
+        "has_url": true,
+        "game_url": "SNES/Zombies.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_903-SNES.php?emulator=EJS",
+        "len": 80755,
+        "has_name": true,
+        "game_name": "Zombies Ate My Neighbors",
+        "has_url": true,
+        "game_url": "SNES/Zombies.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_903-SNES.php?Ads=No&emulator=EJS",
+        "len": 78583,
+        "has_name": true,
+        "game_name": "Zombies Ate My Neighbors",
+        "has_url": true,
+        "game_url": "SNES/Zombies.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_903-SNES.php",
+        "len": 80755,
+        "has_name": true,
+        "game_name": "Zombies Ate My Neighbors",
+        "has_url": true,
+        "game_url": "SNES/Zombies.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 910,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_910-SNES.php?emulator=EJS&Ads=No",
+        "len": 77174,
+        "has_name": true,
+        "game_name": "Top Gear",
+        "has_url": true,
+        "game_url": "SNES/Top_Gear.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_910-SNES.php?emulator=EJS",
+        "len": 79346,
+        "has_name": true,
+        "game_name": "Top Gear",
+        "has_url": true,
+        "game_url": "SNES/Top_Gear.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_910-SNES.php?Ads=No&emulator=EJS",
+        "len": 77174,
+        "has_name": true,
+        "game_name": "Top Gear",
+        "has_url": true,
+        "game_url": "SNES/Top_Gear.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_910-SNES.php",
+        "len": 79346,
+        "has_name": true,
+        "game_name": "Top Gear",
+        "has_url": true,
+        "game_url": "SNES/Top_Gear.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 825,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_825-SNES.php?emulator=EJS&Ads=No",
+        "len": 78724,
+        "has_name": true,
+        "game_name": "Final Fight 3",
+        "has_url": true,
+        "game_url": "SNES/Final_Fight_3.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_825-SNES.php?emulator=EJS",
+        "len": 80896,
+        "has_name": true,
+        "game_name": "Final Fight 3",
+        "has_url": true,
+        "game_url": "SNES/Final_Fight_3.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_825-SNES.php?Ads=No&emulator=EJS",
+        "len": 78724,
+        "has_name": true,
+        "game_name": "Final Fight 3",
+        "has_url": true,
+        "game_url": "SNES/Final_Fight_3.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_825-SNES.php",
+        "len": 80896,
+        "has_name": true,
+        "game_name": "Final Fight 3",
+        "has_url": true,
+        "game_url": "SNES/Final_Fight_3.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 830,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_830-SNES.php?emulator=EJS&Ads=No",
+        "len": 80122,
+        "has_name": true,
+        "game_name": "Star Fox",
+        "has_url": true,
+        "game_url": "SNES/Star_Fox.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_830-SNES.php?emulator=EJS",
+        "len": 82294,
+        "has_name": true,
+        "game_name": "Star Fox",
+        "has_url": true,
+        "game_url": "SNES/Star_Fox.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_830-SNES.php?Ads=No&emulator=EJS",
+        "len": 80122,
+        "has_name": true,
+        "game_name": "Star Fox",
+        "has_url": true,
+        "game_url": "SNES/Star_Fox.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_830-SNES.php",
+        "len": 82294,
+        "has_name": true,
+        "game_name": "Star Fox",
+        "has_url": true,
+        "game_url": "SNES/Star_Fox.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 815,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_815-SNES.php?emulator=EJS&Ads=No",
+        "len": 77515,
+        "has_name": true,
+        "game_name": "F-Zero",
+        "has_url": true,
+        "game_url": "SNES/F-zero.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_815-SNES.php?emulator=EJS",
+        "len": 79687,
+        "has_name": true,
+        "game_name": "F-Zero",
+        "has_url": true,
+        "game_url": "SNES/F-zero.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_815-SNES.php?Ads=No&emulator=EJS",
+        "len": 77515,
+        "has_name": true,
+        "game_name": "F-Zero",
+        "has_url": true,
+        "game_url": "SNES/F-zero.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_815-SNES.php",
+        "len": 79687,
+        "has_name": true,
+        "game_name": "F-Zero",
+        "has_url": true,
+        "game_url": "SNES/F-zero.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1452,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1452-SNES.php?emulator=EJS&Ads=No",
+        "len": 77877,
+        "has_name": true,
+        "game_name": "Gradius III - The Outbreak",
+        "has_url": true,
+        "game_url": "SNES/Gradius_III.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1452-SNES.php?emulator=EJS",
+        "len": 80049,
+        "has_name": true,
+        "game_name": "Gradius III - The Outbreak",
+        "has_url": true,
+        "game_url": "SNES/Gradius_III.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1452-SNES.php?Ads=No&emulator=EJS",
+        "len": 77877,
+        "has_name": true,
+        "game_name": "Gradius III - The Outbreak",
+        "has_url": true,
+        "game_url": "SNES/Gradius_III.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1452-SNES.php",
+        "len": 80049,
+        "has_name": true,
+        "game_name": "Gradius III - The Outbreak",
+        "has_url": true,
+        "game_url": "SNES/Gradius_III.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 904,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_904-SNES.php?emulator=EJS&Ads=No",
+        "len": 81586,
+        "has_name": true,
+        "game_name": "Mega Man 7",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_7.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_904-SNES.php?emulator=EJS",
+        "len": 83758,
+        "has_name": true,
+        "game_name": "Mega Man 7",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_7.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_904-SNES.php?Ads=No&emulator=EJS",
+        "len": 81586,
+        "has_name": true,
+        "game_name": "Mega Man 7",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_7.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_904-SNES.php",
+        "len": 83758,
+        "has_name": true,
+        "game_name": "Mega Man 7",
+        "has_url": true,
+        "game_url": "SNES/Mega_Man_7.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1365,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1365-SNES.php?emulator=EJS&Ads=No",
+        "len": 77121,
+        "has_name": true,
+        "game_name": "Super Bomberman 2",
+        "has_url": true,
+        "game_url": "SNES/Super_Bomberman_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1365-SNES.php?emulator=EJS",
+        "len": 79293,
+        "has_name": true,
+        "game_name": "Super Bomberman 2",
+        "has_url": true,
+        "game_url": "SNES/Super_Bomberman_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1365-SNES.php?Ads=No&emulator=EJS",
+        "len": 77121,
+        "has_name": true,
+        "game_name": "Super Bomberman 2",
+        "has_url": true,
+        "game_url": "SNES/Super_Bomberman_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1365-SNES.php",
+        "len": 79293,
+        "has_name": true,
+        "game_name": "Super Bomberman 2",
+        "has_url": true,
+        "game_url": "SNES/Super_Bomberman_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 875,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_875-SNES.php?emulator=EJS&Ads=No",
+        "len": 80154,
+        "has_name": true,
+        "game_name": "Killer Instinct",
+        "has_url": true,
+        "game_url": "SNES/Killer_Instinct.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_875-SNES.php?emulator=EJS",
+        "len": 82326,
+        "has_name": true,
+        "game_name": "Killer Instinct",
+        "has_url": true,
+        "game_url": "SNES/Killer_Instinct.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_875-SNES.php?Ads=No&emulator=EJS",
+        "len": 80154,
+        "has_name": true,
+        "game_name": "Killer Instinct",
+        "has_url": true,
+        "game_url": "SNES/Killer_Instinct.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_875-SNES.php",
+        "len": 82326,
+        "has_name": true,
+        "game_name": "Killer Instinct",
+        "has_url": true,
+        "game_url": "SNES/Killer_Instinct.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 1320,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1320-SNES.php?emulator=EJS&Ads=No",
+        "len": 79791,
+        "has_name": true,
+        "game_name": "The Legend of the Mystical Ninja",
+        "has_url": true,
+        "game_url": "SNES/Legend_of_Mystical_Ninja.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1320-SNES.php?emulator=EJS",
+        "len": 81963,
+        "has_name": true,
+        "game_name": "The Legend of the Mystical Ninja",
+        "has_url": true,
+        "game_url": "SNES/Legend_of_Mystical_Ninja.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1320-SNES.php?Ads=No&emulator=EJS",
+        "len": 79791,
+        "has_name": true,
+        "game_name": "The Legend of the Mystical Ninja",
+        "has_url": true,
+        "game_url": "SNES/Legend_of_Mystical_Ninja.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1320-SNES.php",
+        "len": 81963,
+        "has_name": true,
+        "game_name": "The Legend of the Mystical Ninja",
+        "has_url": true,
+        "game_url": "SNES/Legend_of_Mystical_Ninja.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 887,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_887-SNES.php?emulator=EJS&Ads=No",
+        "len": 78260,
+        "has_name": true,
+        "game_name": "The Adventures of Batman & Robin",
+        "has_url": true,
+        "game_url": "SNES/Batman_and_Robin.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_887-SNES.php?emulator=EJS",
+        "len": 80432,
+        "has_name": true,
+        "game_name": "The Adventures of Batman & Robin",
+        "has_url": true,
+        "game_url": "SNES/Batman_and_Robin.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_887-SNES.php?Ads=No&emulator=EJS",
+        "len": 78260,
+        "has_name": true,
+        "game_name": "The Adventures of Batman & Robin",
+        "has_url": true,
+        "game_url": "SNES/Batman_and_Robin.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_887-SNES.php",
+        "len": 80432,
+        "has_name": true,
+        "game_name": "The Adventures of Batman & Robin",
+        "has_url": true,
+        "game_url": "SNES/Batman_and_Robin.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 861,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_861-SNES.php?emulator=EJS&Ads=No",
+        "len": 78773,
+        "has_name": true,
+        "game_name": "Breath of Fire",
+        "has_url": true,
+        "game_url": "SNES/Breath_of_Fire.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_861-SNES.php?emulator=EJS",
+        "len": 80945,
+        "has_name": true,
+        "game_name": "Breath of Fire",
+        "has_url": true,
+        "game_url": "SNES/Breath_of_Fire.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_861-SNES.php?Ads=No&emulator=EJS",
+        "len": 78773,
+        "has_name": true,
+        "game_name": "Breath of Fire",
+        "has_url": true,
+        "game_url": "SNES/Breath_of_Fire.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_861-SNES.php",
+        "len": 80945,
+        "has_name": true,
+        "game_name": "Breath of Fire",
+        "has_url": true,
+        "game_url": "SNES/Breath_of_Fire.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1410,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1410-SNES.php?emulator=EJS&Ads=No",
+        "len": 78879,
+        "has_name": true,
+        "game_name": "Saturday Night Slam Masters",
+        "has_url": true,
+        "game_url": "SNES/SNSM.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1410-SNES.php?emulator=EJS",
+        "len": 81051,
+        "has_name": true,
+        "game_name": "Saturday Night Slam Masters",
+        "has_url": true,
+        "game_url": "SNES/SNSM.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1410-SNES.php?Ads=No&emulator=EJS",
+        "len": 78879,
+        "has_name": true,
+        "game_name": "Saturday Night Slam Masters",
+        "has_url": true,
+        "game_url": "SNES/SNSM.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1410-SNES.php",
+        "len": 81051,
+        "has_name": true,
+        "game_name": "Saturday Night Slam Masters",
+        "has_url": true,
+        "game_url": "SNES/SNSM.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1538,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1538-SNES.php?emulator=EJS&Ads=No",
+        "len": 77620,
+        "has_name": true,
+        "game_name": "Axelay",
+        "has_url": true,
+        "game_url": "SNES/Axelay.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1538-SNES.php?emulator=EJS",
+        "len": 79792,
+        "has_name": true,
+        "game_name": "Axelay",
+        "has_url": true,
+        "game_url": "SNES/Axelay.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1538-SNES.php?Ads=No&emulator=EJS",
+        "len": 77620,
+        "has_name": true,
+        "game_name": "Axelay",
+        "has_url": true,
+        "game_url": "SNES/Axelay.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1538-SNES.php",
+        "len": 79792,
+        "has_name": true,
+        "game_name": "Axelay",
+        "has_url": true,
+        "game_url": "SNES/Axelay.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1211,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1211-SNES.php?emulator=EJS&Ads=No",
+        "len": 78799,
+        "has_name": true,
+        "game_name": "Top Gear 2",
+        "has_url": true,
+        "game_url": "SNES/Top_Gear_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1211-SNES.php?emulator=EJS",
+        "len": 80971,
+        "has_name": true,
+        "game_name": "Top Gear 2",
+        "has_url": true,
+        "game_url": "SNES/Top_Gear_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1211-SNES.php?Ads=No&emulator=EJS",
+        "len": 78799,
+        "has_name": true,
+        "game_name": "Top Gear 2",
+        "has_url": true,
+        "game_url": "SNES/Top_Gear_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1211-SNES.php",
+        "len": 80971,
+        "has_name": true,
+        "game_name": "Top Gear 2",
+        "has_url": true,
+        "game_url": "SNES/Top_Gear_2.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 1157,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1157-SNES.php?emulator=EJS&Ads=No",
+        "len": 77907,
+        "has_name": true,
+        "game_name": "The Magical Quest Starring Mickey Mouse",
+        "has_url": true,
+        "game_url": "SNES/Magical_Quest.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1157-SNES.php?emulator=EJS",
+        "len": 80079,
+        "has_name": true,
+        "game_name": "The Magical Quest Starring Mickey Mouse",
+        "has_url": true,
+        "game_url": "SNES/Magical_Quest.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1157-SNES.php?Ads=No&emulator=EJS",
+        "len": 77907,
+        "has_name": true,
+        "game_name": "The Magical Quest Starring Mickey Mouse",
+        "has_url": true,
+        "game_url": "SNES/Magical_Quest.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1157-SNES.php",
+        "len": 80079,
+        "has_name": true,
+        "game_name": "The Magical Quest Starring Mickey Mouse",
+        "has_url": true,
+        "game_url": "SNES/Magical_Quest.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1037,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1037-SNES.php?emulator=EJS&Ads=No",
+        "len": 78003,
+        "has_name": true,
+        "game_name": "Super Bomberman",
+        "has_url": true,
+        "game_url": "SNES/Super_Bomberman.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1037-SNES.php?emulator=EJS",
+        "len": 80175,
+        "has_name": true,
+        "game_name": "Super Bomberman",
+        "has_url": true,
+        "game_url": "SNES/Super_Bomberman.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1037-SNES.php?Ads=No&emulator=EJS",
+        "len": 78003,
+        "has_name": true,
+        "game_name": "Super Bomberman",
+        "has_url": true,
+        "game_url": "SNES/Super_Bomberman.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1037-SNES.php",
+        "len": 80175,
+        "has_name": true,
+        "game_name": "Super Bomberman",
+        "has_url": true,
+        "game_url": "SNES/Super_Bomberman.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 1579,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1579-SNES.php?emulator=EJS&Ads=No",
+        "len": 75825,
+        "has_name": true,
+        "game_name": "Uniracers",
+        "has_url": true,
+        "game_url": "SNES/Uniracers.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1579-SNES.php?emulator=EJS",
+        "len": 77997,
+        "has_name": true,
+        "game_name": "Uniracers",
+        "has_url": true,
+        "game_url": "SNES/Uniracers.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1579-SNES.php?Ads=No&emulator=EJS",
+        "len": 75825,
+        "has_name": true,
+        "game_name": "Uniracers",
+        "has_url": true,
+        "game_url": "SNES/Uniracers.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1579-SNES.php",
+        "len": 77997,
+        "has_name": true,
+        "game_name": "Uniracers",
+        "has_url": true,
+        "game_url": "SNES/Uniracers.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1059,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1059-SNES.php?emulator=EJS&Ads=No",
+        "len": 78280,
+        "has_name": true,
+        "game_name": "Super Ghouls ’N Ghosts",
+        "has_url": true,
+        "game_url": "SNES/Super_Ghouls_N_Ghosts.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1059-SNES.php?emulator=EJS",
+        "len": 80452,
+        "has_name": true,
+        "game_name": "Super Ghouls ’N Ghosts",
+        "has_url": true,
+        "game_url": "SNES/Super_Ghouls_N_Ghosts.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1059-SNES.php?Ads=No&emulator=EJS",
+        "len": 78280,
+        "has_name": true,
+        "game_name": "Super Ghouls ’N Ghosts",
+        "has_url": true,
+        "game_url": "SNES/Super_Ghouls_N_Ghosts.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1059-SNES.php",
+        "len": 80452,
+        "has_name": true,
+        "game_name": "Super Ghouls ’N Ghosts",
+        "has_url": true,
+        "game_url": "SNES/Super_Ghouls_N_Ghosts.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 879,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_879-SNES.php?emulator=EJS&Ads=No",
+        "len": 79359,
+        "has_name": true,
+        "game_name": "Bust-A-Move",
+        "has_url": true,
+        "game_url": "SNES/Bust-A-Move.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_879-SNES.php?emulator=EJS",
+        "len": 81531,
+        "has_name": true,
+        "game_name": "Bust-A-Move",
+        "has_url": true,
+        "game_url": "SNES/Bust-A-Move.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_879-SNES.php?Ads=No&emulator=EJS",
+        "len": 79359,
+        "has_name": true,
+        "game_name": "Bust-A-Move",
+        "has_url": true,
+        "game_url": "SNES/Bust-A-Move.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_879-SNES.php",
+        "len": 81531,
+        "has_name": true,
+        "game_name": "Bust-A-Move",
+        "has_url": true,
+        "game_url": "SNES/Bust-A-Move.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": true
+      }
+    }
+  },
+  {
+    "id": 1509,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1509-SNES.php?emulator=EJS&Ads=No",
+        "len": 75408,
+        "has_name": true,
+        "game_name": "Super Turrican",
+        "has_url": true,
+        "game_url": "SNES/Super_Turrican.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1509-SNES.php?emulator=EJS",
+        "len": 77580,
+        "has_name": true,
+        "game_name": "Super Turrican",
+        "has_url": true,
+        "game_url": "SNES/Super_Turrican.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1509-SNES.php?Ads=No&emulator=EJS",
+        "len": 75408,
+        "has_name": true,
+        "game_name": "Super Turrican",
+        "has_url": true,
+        "game_url": "SNES/Super_Turrican.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1509-SNES.php",
+        "len": 77580,
+        "has_name": true,
+        "game_name": "Super Turrican",
+        "has_url": true,
+        "game_url": "SNES/Super_Turrican.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  },
+  {
+    "id": 1504,
+    "variants": {
+      "combined": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1504-SNES.php?emulator=EJS&Ads=No",
+        "len": 75836,
+        "has_name": true,
+        "game_name": "Ninja Gaiden Trilogy",
+        "has_url": true,
+        "game_url": "SNES/Ninja_Gaiden_Trilogy.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ejs_only": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1504-SNES.php?emulator=EJS",
+        "len": 78008,
+        "has_name": true,
+        "game_name": "Ninja Gaiden Trilogy",
+        "has_url": true,
+        "game_url": "SNES/Ninja_Gaiden_Trilogy.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "ads_first": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1504-SNES.php?Ads=No&emulator=EJS",
+        "len": 75836,
+        "has_name": true,
+        "game_name": "Ninja Gaiden Trilogy",
+        "has_url": true,
+        "game_url": "SNES/Ninja_Gaiden_Trilogy.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      },
+      "plain": {
+        "status": 200,
+        "final_url": "https://www.retrogames.cz/play_1504-SNES.php",
+        "len": 78008,
+        "has_name": true,
+        "game_name": "Ninja Gaiden Trilogy",
+        "has_url": true,
+        "game_url": "SNES/Ninja_Gaiden_Trilogy.zip",
+        "has_player": true,
+        "network_error": false,
+        "unavailable": false
+      }
+    }
+  }
+]
